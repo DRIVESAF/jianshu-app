@@ -1,72 +1,61 @@
 <template>
-	<uni-search-bar placeholder="搜索感兴趣的内容" bgColor="#e5edf0" @confirm="search" />
-    <scroll-view id="tab" scroll-x="true">
-    		<view v-for="(item,index) in barNameList" :key="item.id" class="tabName" :data-current="index" @click="ontabtap">
-    			<text class="tabName_text" :class="tabIndex == index?'active_text':''">{{item.name}}</text>
-    		</view>
-    </scroll-view>
-	<van-button type="primary" @click="handleClick">点击按钮</van-button>
+	<view class="content">
+		<!-- 搜索开始 -->
+		<uni-search-bar placeholder="搜索感兴趣的内容" bgColor="#f2f2f2" @confirm="search" />
+		<!-- 搜索结束 -->
+		<!-- 顶部选项卡开始 -->
+			<scroll-view class="tab" scroll-x="">
+				<view class="tab-box">
+					<view v-for="item in list" :key="index" class="tab-item">{{item.name}}</view>
+				</view>
+			</scroll-view>
+			<!-- 顶部选项卡结束 -->
+	</view>
 </template>
 
 <script>
-	export default{
-			data(){
-				return{
-					tabIndex:0,
-					barNameList:[{
-					    name: '推荐',
-					    id: '0'
-					}, {
-					    name: '小岛',
-					    id: '1'
-					}, {
-					    name: '专题',
-					    id: '2'
-					},{
-					    name: '连载',
-					    id: '3'
-					}]
-				}
-			},
-			methods:{
-				// scroll-view 点击 tab 时 改变下标
-				ontabtap(e){
-					let index = e.target.dataset.current || e.currentTarget.dataset.current;
-					this.switchTab(index);
+	export default {
+		data() {
+			return {
+				list:[{
+					name:'推荐'
 				},
-				switchTab(index){
-					if(this.tabIndex == index){
-						return
-					}
-					this.tabIndex = index;
+				{
+					name:'小岛'
+				},
+				{
+					name:'专题'
+				},
+				{
+					name:'连载'
 				}
+				]
 			}
+		},
+		methods: {
+			
 		}
+	}
 </script>
 
-<style>
-		#tab{
-			width: 100%;
-			display: flex;
+<style lang="scss">
+	.tab{
+		border-bottom: 1px #e5eef1 solid;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.tab-box{
+		display: flex;
+		height: 45rpx;
+		align-items: center;
+		/* 不换行 */
+		flex-wrap: nowrap;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+		justify-content: space-around;
 		}
-		.tabName{
-			text-align: center;
-			width: 25%;
-			display: inline-block;
-			height: 80rpx;
-			line-height: 80rpx;
-			white-space: nowrap;
-		}
-		.tabName_text{
-			display: inline-block;
-			width: 100%;
-			height: 100%;
-		}
-		.active_text{
-			background-color: #f0f8fa;
-			color: #abb3b5;
-		}
-		#tabContent{
-			width: 100%;
-		}
+	.tab-item{
+			flex-shrink: 0;
+			color:#abb3b5;
+	}
 </style>

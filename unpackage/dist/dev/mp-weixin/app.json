@@ -8,6 +8,8 @@
   ],
   "window": {
     "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "简书",
+    "navigationStyle": "custom",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
