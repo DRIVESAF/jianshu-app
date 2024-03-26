@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.5.3",
+    "@vant/weapp": "^1.11.4",
+    "vant": "^4.8.7"
+  },
+  "devDependencies": {
+    "@uni-helper/uni-ui-types": "^0.5.13"
+  }
+}

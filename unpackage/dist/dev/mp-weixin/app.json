@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/concern/concern",
+    "pages/diamond/diamond",
+    "pages/msg/msg",
+    "pages/my/my"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#d7d7d7",
+    "selectedColor": "#f26f51",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "iconfontSrc": "static/iconfont.ttf",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/首页.png",
+        "selectedIconPath": "static/tabbar/首页-light.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/concern/concern",
+        "iconPath": "static/tabbar/关注.png",
+        "selectedIconPath": "static/tabbar/关注-light.png",
+        "text": "关注"
+      },
+      {
+        "pagePath": "pages/diamond/diamond",
+        "iconPath": "static/tabbar/钻石.png",
+        "selectedIconPath": "static/tabbar/钻石-light.png",
+        "text": "简书钻"
+      },
+      {
+        "pagePath": "pages/msg/msg",
+        "iconPath": "static/tabbar/消息.png",
+        "selectedIconPath": "static/tabbar/消息-light.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/tabbar/我的.png",
+        "selectedIconPath": "static/tabbar/我的-light.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
