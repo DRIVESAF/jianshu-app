@@ -14,17 +14,21 @@
 	  
     </view>
     <!-- 内容切换 -->
+	<!-- 推荐页 -->
    <view class="content" v-if="navIndex==1">
-      我是选项一
+      <recommend></recommend>
     </view>
+	<!-- 小岛页 -->
     <view class="content" v-if="navIndex==2">
-      我是选项二
+      <island></island>
     </view>
+	<!-- 专题页 -->
     <view class="content" v-if="navIndex==3">
-      我是选项三
+      <topic></topic>
     </view>
+	<!-- 连载页 -->
     <view class="content" v-if="navIndex==4">
-      我是选项四
+      <series></series>
     </view>
     <!-- 选项卡结束 -->
 	
@@ -33,6 +37,11 @@
 </template>
 
 <script>
+	import recommend from './components/recommend.vue'
+	import island from './components/island.vue'
+	import topic from './components/topic.vue'
+	import series from './components/series.vue'
+	
   export default{
     data(){
       return{
@@ -43,7 +52,13 @@
       checkIndex(index){
         this.navIndex =index;
       }
-    }
+    },
+	components:{
+		recommend,
+		island,
+		topic,
+		series
+	}
   }
 </script>
 
