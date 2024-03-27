@@ -1,5 +1,5 @@
 "use strict";
-const common_vendor = require("../../../../../common/vendor.js");
+const common_vendor = require("../../../../common/vendor.js");
 const _sfc_main = {
   name: "uniList",
   "mp-weixin": {
@@ -53,5 +53,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     b: $props.border
   }, $props.border ? {} : {});
 }
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/node_modules/@dcloudio/uni-ui/lib/uni-list/uni-list.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-list/components/uni-list/uni-list.vue"]]);
 wx.createComponent(Component);

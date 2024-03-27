@@ -1,4 +1,12 @@
 
+.content {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+}
+
 /* 状态栏开始 */
 .condition {
 	background-color: #ffffff;
@@ -22,8 +30,8 @@
 /* 选项卡开始 */
 .head-nav {
 	width: 100%;
-	padding: 20px auto;
-	height: 40px;
+	padding: 40rpx auto;
+	height: 80rpx;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-end;
@@ -32,10 +40,10 @@
 }
 .activite {
 	color: #333333;
-	border-bottom: rpx solid #f26f51;
+	border-bottom: 4rpx solid #f26f51;
 }
 .head-nav > view {
-	padding-bottom: 20px;
+	padding-bottom: 25rpx;
 }
 .box {
 	background: #008000;

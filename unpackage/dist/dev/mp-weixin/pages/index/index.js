@@ -60,16 +60,18 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     j: common_vendor.n($data.navIndex == 4 ? "activite" : ""),
     k: common_vendor.o(($event) => $options.checkIndex(4)),
     l: $data.navIndex == 1
-  }, $data.navIndex == 1 ? {} : {}, {
-    m: $data.navIndex == 2
+  }, $data.navIndex == 1 ? {
+    m: $data.statusBarHeight + 94.61 + "px"
+  } : {}, {
+    n: $data.navIndex == 2
   }, $data.navIndex == 2 ? {} : {}, {
-    n: $data.navIndex == 3
+    o: $data.navIndex == 3
   }, $data.navIndex == 3 ? {} : {}, {
-    o: $data.navIndex == 4
+    p: $data.navIndex == 4
   }, $data.navIndex == 4 ? {} : {}, {
-    p: common_vendor.o(_ctx.trigger),
-    q: common_vendor.o(_ctx.fabClick),
-    r: common_vendor.p({
+    q: common_vendor.o(_ctx.trigger),
+    r: common_vendor.o(_ctx.fabClick),
+    s: common_vendor.p({
       pattern: _ctx.pattern,
       content: _ctx.content,
       horizontal: "right",

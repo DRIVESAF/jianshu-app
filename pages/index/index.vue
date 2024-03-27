@@ -19,11 +19,11 @@
 			<view :class="navIndex == 4 ? 'activite' : ''" @click="checkIndex(4)">连载</view>
 		</view>
 		<!-- 推荐页 -->
-		<view class="content" v-if="navIndex == 1">
+		<view class="content" :style="{ top: statusBarHeight + 94.61 + 'px' }" v-if="navIndex == 1">
 			<recommend></recommend>
 		</view>
 		<!-- 小岛页 -->
-		<view class="content" v-if="navIndex == 2">
+		<view class="" v-if="navIndex == 2">
 			<island></island>
 		</view>
 		<!-- 专题页 -->
@@ -79,6 +79,14 @@ export default {
 </script>
 
 <style>
+.content {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+}
+
 /* 状态栏开始 */
 .condition {
 	background-color: #ffffff;
@@ -102,8 +110,8 @@ export default {
 /* 选项卡开始 */
 .head-nav {
 	width: 100%;
-	padding: 20px auto;
-	height: 40px;
+	padding: 40rpx auto;
+	height: 80rpx;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-end;
@@ -112,10 +120,10 @@ export default {
 }
 .activite {
 	color: #333333;
-	border-bottom: rpx solid #f26f51;
+	border-bottom: 4rpx solid #f26f51;
 }
 .head-nav > view {
-	padding-bottom: 20px;
+	padding-bottom: 25rpx;
 }
 .box {
 	background: #008000;
