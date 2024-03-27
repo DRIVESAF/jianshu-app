@@ -25,19 +25,44 @@
 /* 文章场景相关 */
 swiper {
   background-color: #fff;
-  height: 70rpx;
+  height: 90rpx;
   display: flex;
 }
 .img {
-  width: 140rpx;
-  height: 140rpx;
+  width: 180rpx;
+  height: 78rpx;
   float: left;
-  margin: 10rpx 0 0 60rpx;
+  margin: 10rpx 0 0 20rpx;
+}
+image {
+  display: inline;
+  opacity: inherit;
+  height: auto;
+  width: auto;
 }
 .text {
   font-size: 26rpx;
   float: left;
-  margin: 15rpx 0 0 20rpx;
-  padding: 0 60rpx;
+  margin: 40rpx 0 0 20rpx;
+  padding: 0 30rpx;
   border-left: 2rpx solid #e1e1e1;
+}
+.son-nav {
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  font-size: 26rpx;
+  background-color: #fff;
+}
+.activite {
+  color: #e96e58;
+}
+.son-nav > view {
+  padding-bottom: 10rpx;
+  margin: 20rpx 10rpx 10rpx 50rpx;
+}
+.box {
+  background: #008000;
 }

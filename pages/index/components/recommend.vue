@@ -4,7 +4,7 @@
 		<list>
 			<cell v-for="(item, index) in dataList" :key="item.id">
 				<!-- 卡片开始 -->
-				<uni-card shadow="none" margin="0 0 10rpx 0" border="false">
+				<uni-card shadow="none" margin="6rpx 0 10rpx 0" border="false">
 					<!-- 标题 -->
 					<template v-slot:title>
 						<uni-list>
@@ -12,7 +12,13 @@
 						</uni-list>
 					</template>
 					<!-- 图片 -->
+					// #ifdef MP-WEIXIN
 					<image mode="scaleToFill" :src="item.src"></image>
+					// #endif // #ifdef H5
+					<image mode="scaleToFill" :src="getUrl(item.src)"></image>
+					// #endif // #ifdef APP-PLUS
+					<image mode="scaleToFill" :src="item.src"></image>
+					// #endif
 					<!-- 热度 -->
 					<view slot="actions" class="card-actions">
 						<view class="card-actions-item">
@@ -41,6 +47,11 @@ export default {
 				{ id: 6, title: '【经验】UI设计师是如何工作的？', src: '../../../static/images/r6.png', id: '摹客', data: ' 264 阅读 0 评论 5 赞' }
 			]
 		};
+	},
+	methods: {
+		getUrl(url) {
+			return new URL(url, import.meta.url).href;
+		}
 	}
 };
 </script>

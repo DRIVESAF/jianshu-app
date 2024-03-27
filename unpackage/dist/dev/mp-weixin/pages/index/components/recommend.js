@@ -13,6 +13,11 @@ const _sfc_main = {
         { id: 6, title: "【经验】UI设计师是如何工作的？", src: "../../../static/images/r6.png", id: "摹客", data: " 264 阅读 0 评论 5 赞" }
       ]
     };
+  },
+  methods: {
+    getUrl(url) {
+      return new URL(url, typeof document === "undefined" ? require("url").pathToFileURL(__filename).href : document.currentScript && document.currentScript.src || new URL("pages/index/components/recommend.js", document.baseURI).href).href;
+    }
   }
 };
 if (!Array) {
@@ -43,7 +48,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     }),
     b: common_vendor.p({
       shadow: "none",
-      margin: "0 0 10rpx 0",
+      margin: "6rpx 0 10rpx 0",
       border: "false"
     })
   };

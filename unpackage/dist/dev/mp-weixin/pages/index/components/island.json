@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "square": "./island-components/square",
+    "mine": "./island-components/mine"
+  }
 }

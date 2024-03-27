@@ -997,21 +997,46 @@ uni-image[data-v-81bb5221] {
 /* 文章场景相关 */
 uni-swiper[data-v-d249dff2] {
   background-color: #fff;
-  height: 2.1875rem;
+  height: 2.8125rem;
   display: flex;
 }
 .img[data-v-d249dff2] {
-  width: 4.375rem;
-  height: 4.375rem;
+  width: 5.625rem;
+  height: 2.4375rem;
   float: left;
-  margin: 0.3125rem 0 0 1.875rem;
+  margin: 0.3125rem 0 0 0.625rem;
+}
+uni-image[data-v-d249dff2] {
+  display: inline;
+  opacity: inherit;
+  height: auto;
+  width: auto;
 }
 .text[data-v-d249dff2] {
   font-size: 0.8125rem;
   float: left;
-  margin: 0.46875rem 0 0 0.625rem;
-  padding: 0 1.875rem;
+  margin: 1.25rem 0 0 0.625rem;
+  padding: 0 0.9375rem;
   border-left: 0.0625rem solid #e1e1e1;
+}
+.son-nav[data-v-d249dff2] {
+  width: 100%;
+  margin-top: 0.625rem;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  font-size: 0.8125rem;
+  background-color: #fff;
+}
+.activite[data-v-d249dff2] {
+  color: #e96e58;
+}
+.son-nav > uni-view[data-v-d249dff2] {
+  padding-bottom: 0.3125rem;
+  margin: 0.625rem 0.3125rem 0.3125rem 1.5625rem;
+}
+.box[data-v-d249dff2] {
+  background: #008000;
 }
 
 .content {
