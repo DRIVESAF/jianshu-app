@@ -143,7 +143,7 @@ if (!Array) {
   const _easycom_uni_icons2 = common_vendor.resolveComponent("uni-icons");
   _easycom_uni_icons2();
 }
-const _easycom_uni_icons = () => "../uni-icons/uni-icons.js";
+const _easycom_uni_icons = () => "../../../../../uni_modules/uni-icons/components/uni-icons/uni-icons.js";
 if (!Math) {
   _easycom_uni_icons();
 }

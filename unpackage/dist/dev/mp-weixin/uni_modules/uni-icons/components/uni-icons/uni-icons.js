@@ -1,5 +1,6 @@
 "use strict";
-const common_vendor = require("../../../../../common/vendor.js");
+const uni_modules_uniIcons_components_uniIcons_uniicons_file_vue = require("./uniicons_file_vue.js");
+const common_vendor = require("../../../../common/vendor.js");
 const getVal = (val) => {
   const reg = /^[0-9]*$/g;
   return typeof val === "number" || reg.test(val) ? val + "px" : val;
@@ -31,7 +32,7 @@ const _sfc_main = {
   },
   data() {
     return {
-      icons: common_vendor.fontData
+      icons: uni_modules_uniIcons_components_uniIcons_uniicons_file_vue.fontData
     };
   },
   computed: {
@@ -67,5 +68,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     e: common_vendor.o((...args) => $options._onClick && $options._onClick(...args))
   };
 }
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/node_modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
 wx.createComponent(Component);

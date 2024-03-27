@@ -1779,7 +1779,7 @@ if (uni.restoreGlobal) {
           vue.createCommentVNode(" 卡片 "),
           vue.createVNode(_component_uni_card, {
             shadow: "none",
-            margin: "0 0 10px 0",
+            margin: "0 0 10rpx 0",
             border: "false"
           }, {
             title: vue.withCtx(() => [
@@ -1816,7 +1816,7 @@ if (uni.restoreGlobal) {
           vue.createCommentVNode(" 卡片 "),
           vue.createVNode(_component_uni_card, {
             shadow: "none",
-            margin: "0 0 10px 0",
+            margin: "0 0 10rpx 0",
             border: "false"
           }, {
             title: vue.withCtx(() => [
@@ -1853,7 +1853,7 @@ if (uni.restoreGlobal) {
           vue.createCommentVNode(" 卡片 "),
           vue.createVNode(_component_uni_card, {
             shadow: "none",
-            margin: "0 0 10px 0",
+            margin: "0 0 10rpx 0",
             border: "false"
           }, {
             title: vue.withCtx(() => [
@@ -1890,7 +1890,7 @@ if (uni.restoreGlobal) {
           vue.createCommentVNode(" 卡片 "),
           vue.createVNode(_component_uni_card, {
             shadow: "none",
-            margin: "0 0 10px 0",
+            margin: "0 0 10rpx 0",
             border: "false"
           }, {
             title: vue.withCtx(() => [
@@ -1927,7 +1927,7 @@ if (uni.restoreGlobal) {
           vue.createCommentVNode(" 卡片 "),
           vue.createVNode(_component_uni_card, {
             shadow: "none",
-            margin: "0 0 10px 0",
+            margin: "0 0 10rpx 0",
             border: "false"
           }, {
             title: vue.withCtx(() => [

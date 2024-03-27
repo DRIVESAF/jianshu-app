@@ -950,22 +950,21 @@
   text-overflow: ellipsis;
 }
 
-body[data-v-81bb5221]{
-		background-color: #f2f2f2;
+body[data-v-81bb5221] {
+	background-color: #f2f2f2;
 }
 
-	
-	/* 标题 */
-.title[data-v-81bb5221]{
-		color: #333333;
-		font-size: 16px;
-		padding: 10px 10px;
-		line-height: 25px;
+/* 标题 */
+.title[data-v-81bb5221] {
+	color: #333333;
+	font-size: 1rem;
+	padding: 0.625rem 0.625rem;
+	line-height: 1.5625rem;
 }
-	/* 热度 */
-.card-actions-item-text[data-v-81bb5221]{
-		padding: 0 10px;
-		font-size: 12px;
+/* 热度 */
+.card-actions-item-text[data-v-81bb5221] {
+	padding: 0 0.625rem;
+	font-size: 0.75rem;
 }
 
 
@@ -992,8 +991,8 @@ body[data-v-81bb5221]{
 /* 选项卡开始 */
 .head-nav {
 	width: 100%;
-	padding: 0.625rem auto;
-	height: 1.25rem;
+	padding: 20px auto;
+	height: 40px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-end;
@@ -1002,10 +1001,10 @@ body[data-v-81bb5221]{
 }
 .activite {
 	color: #333333;
-	border-bottom: 0.1875rem solid #f26f51;
+	border-bottom: rpx solid #f26f51;
 }
 .head-nav > uni-view {
-	padding-bottom: 0.625rem;
+	padding-bottom: 20px;
 }
 .box {
 	background: #008000;

@@ -1,17 +1,49 @@
 
-.head-nav.data-v-1cf27b2a{
-    width: 100%;
-    margin:20rpx auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+/* 状态栏开始 */
+.condition {
+	background-color: #ffffff;
+}
+/* 状态栏结束 */
+
+/* 搜索框开始 */
+.search {
+	background-color: #ffffff;
+}
+ .uni-searchbar {
+	justify-content: center;
+}
+ .uni-searchbar__box {
+	justify-content: center !important;
+	width: 80%;
+	flex: none !important;
+}
+/* 搜索框结束 */
+
+/* 选项卡开始 */
+.head-nav {
+	width: 100%;
+	padding: 20px auto;
+	height: 40px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
 	color: #aaaabd;
+	background-color: #ffffff;
 }
-.activite.data-v-1cf27b2a{
-    color:#333333;
-    border-bottom: 6rpx solid #f26f51;
+.activite {
+	color: #333333;
+	border-bottom: rpx solid #f26f51;
 }
-.head-nav>view.data-v-1cf27b2a{
-    padding-bottom: 10rpx;
+.head-nav > view {
+	padding-bottom: 20px;
 }
-.box.data-v-1cf27b2a{background: #008000;}
+.box {
+	background: #008000;
+}
+/* 选项卡结束 */
+
+/* 悬浮按钮开始 */
+ .uni-fab__content--other-platform {
+	box-shadow: none !important;
+}
+/* 悬浮按钮结束 */

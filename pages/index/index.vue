@@ -102,8 +102,8 @@ export default {
 /* 选项卡开始 */
 .head-nav {
 	width: 100%;
-	padding: 20rpx auto;
-	height: 40rpx;
+	padding: 20px auto;
+	height: 40px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-end;
@@ -112,10 +112,10 @@ export default {
 }
 .activite {
 	color: #333333;
-	border-bottom: 6rpx solid #f26f51;
+	border-bottom: rpx solid #f26f51;
 }
 .head-nav > view {
-	padding-bottom: 20rpx;
+	padding-bottom: 20px;
 }
 .box {
 	background: #008000;

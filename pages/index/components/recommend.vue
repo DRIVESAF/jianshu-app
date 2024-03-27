@@ -2,7 +2,7 @@
 	<!-- 推荐页 -->
 	<view class="recommend">
 		<!-- 卡片 -->
-		<uni-card shadow="none" margin="0 0 10px 0" border="false">
+		<uni-card shadow="none" margin="0 0 10rpx 0" border="false">
 			<!-- 标题 -->
 			<template v-slot:title>
 				<uni-list>
@@ -21,7 +21,7 @@
 		</uni-card>
 		<!-- 卡片 -->
 		<!-- 卡片 -->
-		<uni-card shadow="none" margin="0 0 10px 0" border="false">
+		<uni-card shadow="none" margin="0 0 10rpx 0" border="false">
 			<!-- 标题 -->
 			<template v-slot:title>
 				<uni-list>
@@ -40,7 +40,7 @@
 		</uni-card>
 		<!-- 卡片 -->
 		<!-- 卡片 -->
-		<uni-card shadow="none" margin="0 0 10px 0" border="false">
+		<uni-card shadow="none" margin="0 0 10rpx 0" border="false">
 			<!-- 标题 -->
 			<template v-slot:title>
 				<uni-list>
@@ -59,7 +59,7 @@
 		</uni-card>
 		<!-- 卡片 -->
 		<!-- 卡片 -->
-		<uni-card shadow="none" margin="0 0 10px 0" border="false">
+		<uni-card shadow="none" margin="0 0 10rpx 0" border="false">
 			<!-- 标题 -->
 			<template v-slot:title>
 				<uni-list>
@@ -78,7 +78,7 @@
 		</uni-card>
 		<!-- 卡片 -->
 		<!-- 卡片 -->
-		<uni-card shadow="none" margin="0 0 10px 0" border="false">
+		<uni-card shadow="none" margin="0 0 10rpx 0" border="false">
 			<!-- 标题 -->
 			<template v-slot:title>
 				<uni-list>
@@ -99,25 +99,23 @@
 	</view>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style>
-	body{
-		background-color: #f2f2f2;
-	}
+body {
+	background-color: #f2f2f2;
+}
 
-	
-	/* 标题 */
-	.title{
-		color: #333333;
-		font-size: 16px;
-		padding: 10px 10px;
-		line-height: 25px;
-	}
-	/* 热度 */
-	.card-actions-item-text{
-		padding: 0 10px;
-		font-size: 12px;
-	}
+/* 标题 */
+.title {
+	color: #333333;
+	font-size: 32rpx;
+	padding: 20rpx 20rpx;
+	line-height: 50rpx;
+}
+/* 热度 */
+.card-actions-item-text {
+	padding: 0 20rpx;
+	font-size: 24rpx;
+}
 </style>

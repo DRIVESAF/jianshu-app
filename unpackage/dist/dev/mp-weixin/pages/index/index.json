@@ -5,6 +5,6 @@
     "topic": "./components/topic",
     "series": "./components/series",
     "uni-search-bar": "../../node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar",
-    "uni-section": "../../node-modules/@dcloudio/uni-ui/lib/uni-section/uni-section"
+    "uni-fab": "../../uni_modules/uni-fab/components/uni-fab/uni-fab"
   }
 }
