@@ -4,8 +4,8 @@ const _sfc_main = {
   data() {
     return {
       swipers: [
-        { src: "../../../static/images/赞.svg", text: "每天起床第一句，先给自己打个气" },
-        { src: "../../../static/images/钻.svg", text: "你的专业，摆地摊能干什么？" }
+        { src: "../../../static/images/点赞.png", text: "每天起床第一句，先给自己打个气" },
+        { src: "../../../static/images/钻石-blue.png", text: "你的专业，摆地摊能干什么？" }
       ]
     };
   }

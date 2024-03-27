@@ -997,12 +997,21 @@ uni-image[data-v-81bb5221] {
 /* 文章场景相关 */
 uni-swiper[data-v-d249dff2] {
   background-color: #fff;
-  height: 2.5rem;
+  height: 2.1875rem;
+  display: flex;
 }
-uni-image[data-v-d249dff2] {
-  width: 0.125rem;
-  height: 0.125rem;
+.img[data-v-d249dff2] {
+  width: 4.375rem;
+  height: 4.375rem;
   float: left;
+  margin: 0.3125rem 0 0 1.875rem;
+}
+.text[data-v-d249dff2] {
+  font-size: 0.8125rem;
+  float: left;
+  margin: 0.46875rem 0 0 0.625rem;
+  padding: 0 1.875rem;
+  border-left: 0.0625rem solid #e1e1e1;
 }
 
 .content {

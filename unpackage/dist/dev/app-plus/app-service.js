@@ -1895,8 +1895,8 @@ if (uni.restoreGlobal) {
     data() {
       return {
         swipers: [
-          { src: "../../../static/images/赞.svg", text: "每天起床第一句，先给自己打个气" },
-          { src: "../../../static/images/钻.svg", text: "你的专业，摆地摊能干什么？" }
+          { src: "../../../static/images/点赞.png", text: "每天起床第一句，先给自己打个气" },
+          { src: "../../../static/images/钻石-blue.png", text: "你的专业，摆地摊能干什么？" }
         ]
       };
     }
@@ -1918,13 +1918,15 @@ if (uni.restoreGlobal) {
               null,
               vue.renderList($data.swipers, (item) => {
                 return vue.openBlock(), vue.createElementBlock("swiper-item", { key: item }, [
-                  vue.createElementVNode("image", {
-                    mode: "widthFix",
-                    src: item.src
-                  }, null, 8, ["src"]),
+                  vue.createElementVNode("view", { class: "img" }, [
+                    vue.createElementVNode("image", {
+                      mode: "widthFix",
+                      src: item.src
+                    }, null, 8, ["src"])
+                  ]),
                   vue.createElementVNode(
                     "text",
-                    null,
+                    { class: "text" },
                     vue.toDisplayString(item.text),
                     1
                     /* TEXT */

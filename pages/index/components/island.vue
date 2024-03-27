@@ -3,8 +3,10 @@
 	<view class="island">
 		<swiper circular vertical="true" autoplay="true">
 			<swiper-item v-for="item in swipers" :key="item">
-				<image mode="widthFix" :src="item.src"></image>
-				<text>{{ item.text }}</text>
+				<view class="img">
+					<image mode="widthFix" :src="item.src"></image>
+				</view>
+				<text class="text">{{ item.text }}</text>
 			</swiper-item>
 		</swiper>
 	</view>
@@ -15,8 +17,8 @@ export default {
 	data() {
 		return {
 			swipers: [
-				{ src: '../../../static/images/赞.svg', text: '每天起床第一句，先给自己打个气' },
-				{ src: '../../../static/images/钻.svg', text: '你的专业，摆地摊能干什么？' }
+				{ src: '../../../static/images/点赞.png', text: '每天起床第一句，先给自己打个气' },
+				{ src: '../../../static/images/钻石-blue.png', text: '你的专业，摆地摊能干什么？' }
 			]
 		};
 	}
@@ -26,11 +28,21 @@ export default {
 <style lang="scss">
 swiper {
 	background-color: #fff;
-	height: 80rpx;
+	height: 70rpx;
+	display: flex;
 }
-image {
-	width: 4rpx;
-	height: 4rpx;
+.img {
+	width: 140rpx;
+	height: 140rpx;
 	float: left;
+	margin: 10rpx 0 0 60rpx;
+}
+
+.text {
+	font-size: 26rpx;
+	float: left;
+	margin: 15rpx 0 0 20rpx;
+	padding: 0 60rpx;
+	border-left: 2rpx solid #e1e1e1;
 }
 </style>

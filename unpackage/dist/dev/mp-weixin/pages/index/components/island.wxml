@@ -1,1 +1,1 @@
-<view class="island"><swiper circular vertical="true" autoplay="true"><swiper-item wx:for="{{a}}" wx:for-item="item" wx:key="c"><image mode="widthFix" src="{{item.a}}"></image><text>{{item.b}}</text></swiper-item></swiper></view>
+<view class="island"><swiper circular vertical="true" autoplay="true"><swiper-item wx:for="{{a}}" wx:for-item="item" wx:key="c"><view class="img"><image mode="widthFix" src="{{item.a}}"></image></view><text class="text">{{item.b}}</text></swiper-item></swiper></view>
