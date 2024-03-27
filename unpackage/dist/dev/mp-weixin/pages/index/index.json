@@ -1,5 +1,10 @@
 {
   "usingComponents": {
-    "uni-search-bar": "../../node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar"
+    "recommend": "./components/recommend",
+    "island": "./components/island",
+    "topic": "./components/topic",
+    "series": "./components/series",
+    "uni-search-bar": "../../node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar",
+    "uni-section": "../../node-modules/@dcloudio/uni-ui/lib/uni-section/uni-section"
   }
 }
