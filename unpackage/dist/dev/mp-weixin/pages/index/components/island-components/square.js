@@ -1,5 +1,6 @@
 "use strict";
 const common_vendor = require("../../../../common/vendor.js");
+const shuoshuo = () => "./shuoshuo.js";
 const _sfc_main = {
   data() {
     return {
@@ -27,8 +28,15 @@ const _sfc_main = {
     getUrl(url) {
       return new URL(url, typeof document === "undefined" ? require("url").pathToFileURL(__filename).href : document.currentScript && document.currentScript.src || new URL("pages/index/components/island-components/square.js", document.baseURI).href).href;
     }
+  },
+  components: {
+    shuoshuo
   }
 };
+if (!Array) {
+  const _component_shuoshuo = common_vendor.resolveComponent("shuoshuo");
+  _component_shuoshuo();
+}
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
     a: common_vendor.f($data.list, (item, index, i0) => {

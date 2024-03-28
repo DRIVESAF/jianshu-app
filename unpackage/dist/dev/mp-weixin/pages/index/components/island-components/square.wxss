@@ -34,7 +34,7 @@
   flex-shrink: 0;
   width: 32%;
   height: 380rpx;
-  padding: 10rpx;
+  padding-right: 15rpx;
 }
 .scroll-img {
   width: 100%;
@@ -54,7 +54,7 @@ image {
   padding-bottom: 20rpx;
 }
 .button-group {
-  border: 4rpx solid;
+  border: 3rpx solid;
   width: 60%;
   text-align: center;
   border-radius: 32rpx;

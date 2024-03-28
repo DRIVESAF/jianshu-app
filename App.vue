@@ -15,6 +15,7 @@ export default {
 <style>
 /*每个页面公共css */
 @import url('common/common.css');
+@import url('common/free.css');
 
 /* 解决小程序和app滚动条的问题 */
 /* #ifdef MP-WEIXIN || APP-PLUS */

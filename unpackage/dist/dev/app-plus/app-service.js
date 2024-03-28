@@ -688,7 +688,7 @@ if (uni.restoreGlobal) {
     const reg = /^[0-9]*$/g;
     return typeof val === "number" || reg.test(val) ? val + "px" : val;
   };
-  const _sfc_main$g = {
+  const _sfc_main$i = {
     name: "UniIcons",
     emits: ["click"],
     props: {
@@ -742,7 +742,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "text",
       {
@@ -757,7 +757,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-d31e1c47"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
+  const __easycom_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__scopeId", "data-v-d31e1c47"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
   function formatAppLog(type, filename, ...args) {
     if (uni.__log__) {
       uni.__log__(type, filename, ...args);
@@ -1068,7 +1068,7 @@ if (uni.restoreGlobal) {
   const {
     t
   } = initVueI18n(messages);
-  const _sfc_main$f = {
+  const _sfc_main$h = {
     name: "UniSearchBar",
     emits: ["input", "update:modelValue", "clear", "cancel", "confirm", "blur", "focus"],
     props: {
@@ -1204,8 +1204,8 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$2);
+  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$3);
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-searchbar" }, [
       vue.createElementVNode(
         "view",
@@ -1279,9 +1279,759 @@ if (uni.restoreGlobal) {
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-a149a6be"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.vue"]]);
-  let platform = "other";
+  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__scopeId", "data-v-a149a6be"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.vue"]]);
+  const _sfc_main$g = {
+    name: "uniList",
+    "mp-weixin": {
+      options: {
+        multipleSlots: false
+      }
+    },
+    props: {
+      stackFromEnd: {
+        type: Boolean,
+        default: false
+      },
+      enableBackToTop: {
+        type: [Boolean, String],
+        default: false
+      },
+      scrollY: {
+        type: [Boolean, String],
+        default: false
+      },
+      border: {
+        type: Boolean,
+        default: true
+      },
+      renderReverse: {
+        type: Boolean,
+        default: false
+      }
+    },
+    // provide() {
+    // 	return {
+    // 		list: this
+    // 	};
+    // },
+    created() {
+      this.firstChildAppend = false;
+    },
+    methods: {
+      loadMore(e) {
+        this.$emit("scrolltolower");
+      },
+      scroll(e) {
+        this.$emit("scroll", e);
+      }
+    }
+  };
+  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-list uni-border-top-bottom" }, [
+      $props.border ? (vue.openBlock(), vue.createElementBlock("view", {
+        key: 0,
+        class: "uni-list--border-top"
+      })) : vue.createCommentVNode("v-if", true),
+      vue.renderSlot(_ctx.$slots, "default", {}, void 0, true),
+      $props.border ? (vue.openBlock(), vue.createElementBlock("view", {
+        key: 1,
+        class: "uni-list--border-bottom"
+      })) : vue.createCommentVNode("v-if", true)
+    ]);
+  }
+  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-c2f1266a"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-list/components/uni-list/uni-list.vue"]]);
+  const _sfc_main$f = {
+    name: "UniCard",
+    emits: ["click"],
+    props: {
+      title: {
+        type: String,
+        default: ""
+      },
+      subTitle: {
+        type: String,
+        default: ""
+      },
+      padding: {
+        type: String,
+        default: "10px"
+      },
+      margin: {
+        type: String,
+        default: "15px"
+      },
+      spacing: {
+        type: String,
+        default: "0 10px"
+      },
+      extra: {
+        type: String,
+        default: ""
+      },
+      cover: {
+        type: String,
+        default: ""
+      },
+      thumbnail: {
+        type: String,
+        default: ""
+      },
+      isFull: {
+        // 内容区域是否通栏
+        type: Boolean,
+        default: false
+      },
+      isShadow: {
+        // 是否开启阴影
+        type: Boolean,
+        default: true
+      },
+      shadow: {
+        type: String,
+        default: "0px 0px 3px 1px rgba(0, 0, 0, 0.08)"
+      },
+      border: {
+        type: Boolean,
+        default: true
+      }
+    },
+    methods: {
+      onClick(type) {
+        this.$emit("click", type);
+      }
+    }
+  };
+  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock(
+      "view",
+      {
+        class: vue.normalizeClass(["uni-card", { "uni-card--full": $props.isFull, "uni-card--shadow": $props.isShadow, "uni-card--border": $props.border }]),
+        style: vue.normalizeStyle({ "margin": $props.isFull ? 0 : $props.margin, "padding": $props.spacing, "box-shadow": $props.isShadow ? $props.shadow : "" })
+      },
+      [
+        vue.createCommentVNode(" 封面 "),
+        vue.renderSlot(_ctx.$slots, "cover", {}, () => [
+          $props.cover ? (vue.openBlock(), vue.createElementBlock("view", {
+            key: 0,
+            class: "uni-card__cover"
+          }, [
+            vue.createElementVNode("image", {
+              class: "uni-card__cover-image",
+              mode: "widthFix",
+              onClick: _cache[0] || (_cache[0] = ($event) => $options.onClick("cover")),
+              src: $props.cover
+            }, null, 8, ["src"])
+          ])) : vue.createCommentVNode("v-if", true)
+        ], true),
+        vue.renderSlot(_ctx.$slots, "title", {}, () => [
+          $props.title || $props.extra ? (vue.openBlock(), vue.createElementBlock("view", {
+            key: 0,
+            class: "uni-card__header"
+          }, [
+            vue.createCommentVNode(" 卡片标题 "),
+            vue.createElementVNode("view", {
+              class: "uni-card__header-box",
+              onClick: _cache[1] || (_cache[1] = ($event) => $options.onClick("title"))
+            }, [
+              $props.thumbnail ? (vue.openBlock(), vue.createElementBlock("view", {
+                key: 0,
+                class: "uni-card__header-avatar"
+              }, [
+                vue.createElementVNode("image", {
+                  class: "uni-card__header-avatar-image",
+                  src: $props.thumbnail,
+                  mode: "aspectFit"
+                }, null, 8, ["src"])
+              ])) : vue.createCommentVNode("v-if", true),
+              vue.createElementVNode("view", { class: "uni-card__header-content" }, [
+                vue.createElementVNode(
+                  "text",
+                  { class: "uni-card__header-content-title uni-ellipsis" },
+                  vue.toDisplayString($props.title),
+                  1
+                  /* TEXT */
+                ),
+                $props.title && $props.subTitle ? (vue.openBlock(), vue.createElementBlock(
+                  "text",
+                  {
+                    key: 0,
+                    class: "uni-card__header-content-subtitle uni-ellipsis"
+                  },
+                  vue.toDisplayString($props.subTitle),
+                  1
+                  /* TEXT */
+                )) : vue.createCommentVNode("v-if", true)
+              ])
+            ]),
+            vue.createElementVNode("view", {
+              class: "uni-card__header-extra",
+              onClick: _cache[2] || (_cache[2] = ($event) => $options.onClick("extra"))
+            }, [
+              vue.createElementVNode(
+                "text",
+                { class: "uni-card__header-extra-text" },
+                vue.toDisplayString($props.extra),
+                1
+                /* TEXT */
+              )
+            ])
+          ])) : vue.createCommentVNode("v-if", true)
+        ], true),
+        vue.createCommentVNode(" 卡片内容 "),
+        vue.createElementVNode(
+          "view",
+          {
+            class: "uni-card__content",
+            style: vue.normalizeStyle({ padding: $props.padding }),
+            onClick: _cache[3] || (_cache[3] = ($event) => $options.onClick("content"))
+          },
+          [
+            vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
+          ],
+          4
+          /* STYLE */
+        ),
+        vue.createElementVNode("view", {
+          class: "uni-card__actions",
+          onClick: _cache[4] || (_cache[4] = ($event) => $options.onClick("actions"))
+        }, [
+          vue.renderSlot(_ctx.$slots, "actions", {}, void 0, true)
+        ])
+      ],
+      6
+      /* CLASS, STYLE */
+    );
+  }
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-81f163d7"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/node_modules/@dcloudio/uni-ui/lib/uni-card/uni-card.vue"]]);
   const _sfc_main$e = {
+    data() {
+      return {
+        // 卡片内容数据
+        dataList: [
+          { id: 1, title: "如何搭建领导想要的管理驾驶舱，这篇方法论值得收藏", src: "../../../static/images/r1.png", id: "数据分析不是个事儿", data: "164 阅读 0 评论 0 赞 " },
+          { id: 2, title: "推荐一款优秀的跨平台文件传输工具-AirDroid", src: "../../../static/images/r2.png", id: "APP实验室", data: "47阅读 0 评论 3赞" },
+          { id: 3, title: "自己以为很红，却压根没多少个粉丝的3位明星，拜托清醒一点", src: "../../../static/images/r3.png", id: "暴走怪咖豆", data: "468 阅读 0 评论 12 赞" },
+          { id: 4, title: "低代码开发平台有哪些？", src: "../../../static/images/r4.png", id: "JEECG开源社区", data: "90 阅读 0 评论 1 赞" },
+          { id: 5, title: "手机不安装这几个软件，简直太亏", src: "../../../static/images/r5.png", id: "驻地氧气瓶", data: " 432 阅读 0 评论 3 赞" },
+          { id: 6, title: "【经验】UI设计师是如何工作的？", src: "../../../static/images/r6.png", id: "摹客", data: " 264 阅读 0 评论 5 赞" }
+        ]
+      };
+    },
+    methods: {
+      getUrl(url) {
+        return new URL(url, document.currentScript && document.currentScript.src || new URL("app-service.js", document.baseURI).href).href;
+      }
+    }
+  };
+  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_list = resolveEasycom(vue.resolveDynamicComponent("uni-list"), __easycom_0$1);
+    const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_1);
+    const _component_cell = vue.resolveComponent("cell");
+    const _component_list = vue.resolveComponent("list");
+    return vue.openBlock(), vue.createElementBlock(
+      vue.Fragment,
+      null,
+      [
+        vue.createCommentVNode(" 推荐页 "),
+        vue.createElementVNode("view", { class: "recommend" }, [
+          vue.createVNode(_component_list, null, {
+            default: vue.withCtx(() => [
+              (vue.openBlock(true), vue.createElementBlock(
+                vue.Fragment,
+                null,
+                vue.renderList($data.dataList, (item, index) => {
+                  return vue.openBlock(), vue.createBlock(
+                    _component_cell,
+                    {
+                      key: item.id
+                    },
+                    {
+                      default: vue.withCtx(() => [
+                        vue.createCommentVNode(" 卡片开始 "),
+                        vue.createVNode(
+                          _component_uni_card,
+                          {
+                            shadow: "none",
+                            margin: "6rpx 0 10rpx 0",
+                            border: "false"
+                          },
+                          {
+                            title: vue.withCtx(() => [
+                              vue.createVNode(
+                                _component_uni_list,
+                                null,
+                                {
+                                  default: vue.withCtx(() => [
+                                    vue.createElementVNode(
+                                      "text",
+                                      { class: "title" },
+                                      vue.toDisplayString(item.title),
+                                      1
+                                      /* TEXT */
+                                    )
+                                  ]),
+                                  _: 2
+                                  /* DYNAMIC */
+                                },
+                                1024
+                                /* DYNAMIC_SLOTS */
+                              )
+                            ]),
+                            default: vue.withCtx(() => [
+                              vue.createElementVNode("image", {
+                                mode: "scaleToFill",
+                                src: item.src
+                              }, null, 8, ["src"]),
+                              vue.createElementVNode("view", {
+                                slot: "actions",
+                                class: "card-actions"
+                              }, [
+                                vue.createElementVNode("view", { class: "card-actions-item" }, [
+                                  vue.createElementVNode(
+                                    "text",
+                                    { class: "card-actions-item-text" },
+                                    vue.toDisplayString(item.id),
+                                    1
+                                    /* TEXT */
+                                  ),
+                                  vue.createElementVNode(
+                                    "text",
+                                    { class: "card-actions-item-text" },
+                                    vue.toDisplayString(item.data),
+                                    1
+                                    /* TEXT */
+                                  )
+                                ])
+                              ])
+                            ]),
+                            _: 2
+                            /* DYNAMIC */
+                          },
+                          1024
+                          /* DYNAMIC_SLOTS */
+                        ),
+                        vue.createCommentVNode(" 卡片结束 ")
+                      ]),
+                      _: 2
+                      /* DYNAMIC */
+                    },
+                    1024
+                    /* DYNAMIC_SLOTS */
+                  );
+                }),
+                128
+                /* KEYED_FRAGMENT */
+              ))
+            ]),
+            _: 1
+            /* STABLE */
+          })
+        ])
+      ],
+      2112
+      /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+    );
+  }
+  const recommend = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-81bb5221"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/recommend.vue"]]);
+  const _sfc_main$d = {
+    data() {
+      return {
+        // 卡片内容数据
+        list: [
+          {
+            cover: "../../../../static/images/u156.jpg",
+            name: "fine饭",
+            time: "8小时前 ",
+            content: "自己做自己的主心骨\n别等待有一天的哪一步\n只剩万劫不复",
+            topicname: "今天你有什么感悟？小鸟",
+            zan: "30",
+            common: "1"
+          },
+          {
+            cover: "../../../../static/images/u170.jpg",
+            name: "芝士霉霉要全糖",
+            time: "昨天：11:32",
+            content: "周一\r晴\r今天的心情也如天气一般",
+            topicname: "织梦小岛",
+            zan: "1",
+            common: "评论"
+          },
+          {
+            cover: "../../../../static/images/u190.jpg",
+            name: "潘小将",
+            time: "昨天 02:46",
+            content: "有个派出所民警，喜欢上一个女孩，但是害羞不敢表白。被同事知道后决定帮他。他们把他拉到路口，等着女孩出现等了一会儿，女孩终于出现了，在同事们的帮助下，他鼓起勇气拦住了女孩，说道:“小姐，我是派出所的，请你跟我…",
+            topicname: "企业管理参考小岛",
+            zan: "11",
+            common: "2"
+          },
+          {
+            cover: "../../../../static/images/u170.jpg",
+            name: "渐行渐远",
+            time: "10小时前",
+            content: "被骗了三百块钱，心里贼不舒服",
+            topicname: "生活碎片小岛",
+            zan: "15",
+            common: "3"
+          },
+          {
+            cover: "../../../../static/images/u240.jpg",
+            name: "Minecraft小白…",
+            time: "昨天 17:45",
+            content: "hyt又出来了一个龙蛋起床战争，其实跟普通的起床战争规则样...，出于好奇我就去又玩了一局，然后灭了绿，红灭蓝后被我们黄给灭了。",
+            topicname: "Minecraft小岛",
+            zan: "7",
+            common: "5"
+          },
+          {
+            cover: "../../../../static/images/u258.jpg",
+            name: "云端游者",
+            time: "昨天 23:40",
+            content: "有没有那么一刻\n希望红绿灯永远不要转为绿灯\n就这样站着\n像颗树…",
+            topicname: "孤独岛小鸟",
+            zan: "5",
+            common: "评论"
+          }
+        ]
+      };
+    },
+    methods: {
+      getUrl(url) {
+        return new URL(url, document.currentScript && document.currentScript.src || new URL("app-service.js", document.baseURI).href).href;
+      }
+    }
+  };
+  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$3);
+    return vue.openBlock(true), vue.createElementBlock(
+      vue.Fragment,
+      null,
+      vue.renderList($data.list, (item, index) => {
+        return vue.openBlock(), vue.createElementBlock("view", {
+          class: "shuoshuo",
+          key: item.id
+        }, [
+          vue.createElementVNode("view", { class: "card-user" }, [
+            vue.createElementVNode("image", {
+              class: "card-img",
+              src: item.cover,
+              mode: ""
+            }, null, 8, ["src"]),
+            vue.createElementVNode("view", { class: "id" }, [
+              vue.createElementVNode(
+                "text",
+                { class: "name" },
+                vue.toDisplayString(item.name),
+                1
+                /* TEXT */
+              ),
+              vue.createElementVNode(
+                "text",
+                { class: "time" },
+                vue.toDisplayString(item.time),
+                1
+                /* TEXT */
+              )
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "data" }, [
+            vue.createElementVNode(
+              "text",
+              { class: "data" },
+              vue.toDisplayString(item.content),
+              1
+              /* TEXT */
+            )
+          ]),
+          vue.createElementVNode("view", { class: "topic" }, [
+            vue.createElementVNode(
+              "text",
+              { class: "topic-name" },
+              vue.toDisplayString(item.topicname),
+              1
+              /* TEXT */
+            ),
+            vue.createVNode(
+              _component_uni_icons,
+              { type: "hand-up" },
+              {
+                default: vue.withCtx(() => [
+                  vue.createTextVNode(
+                    vue.toDisplayString(item.zan),
+                    1
+                    /* TEXT */
+                  )
+                ]),
+                _: 2
+                /* DYNAMIC */
+              },
+              1024
+              /* DYNAMIC_SLOTS */
+            ),
+            vue.createVNode(
+              _component_uni_icons,
+              { type: "chat" },
+              {
+                default: vue.withCtx(() => [
+                  vue.createTextVNode(
+                    vue.toDisplayString(item.common),
+                    1
+                    /* TEXT */
+                  )
+                ]),
+                _: 2
+                /* DYNAMIC */
+              },
+              1024
+              /* DYNAMIC_SLOTS */
+            )
+          ])
+        ]);
+      }),
+      128
+      /* KEYED_FRAGMENT */
+    );
+  }
+  const shuoshuo = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__scopeId", "data-v-483daba0"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/island-components/shuoshuo.vue"]]);
+  const _sfc_main$c = {
+    data() {
+      return {
+        list: [
+          { src: "../../../../static/images/u56.jpg", text: "我们爱画画", num: "306", flag: "false" },
+          { src: "../../../../static/images/u62.jpg", text: "彦姐书的…", num: "550", flag: "false" },
+          { src: "../../../../static/images/u69.jpg", text: "情感事务所", num: "5229", flag: "false" },
+          { src: "../../../../static/images/u76.jpg", text: "微博故事", num: "181", flag: "false" },
+          { src: "../../../../static/images/u83.jpg", text: "为你高兴", num: "17", flag: "false" },
+          { src: "../../../../static/images/u90.jpg", text: "吐槽那些…", num: "53", flag: "false" },
+          { src: "../../../../static/images/u97.jpg", text: "魔都生活", num: "13", flag: "false" },
+          { src: "../../../../static/images/u104.jpg", text: "时光小岛", num: "12", flag: "false" },
+          { src: "../../../../static/images/u111.jpg", text: "90后相亲", num: "20", flag: "false" },
+          { src: "../../../../static/images/u118.jpg", text: "因为爱情", num: "3", flag: "false" },
+          { src: "../../../../static/images/u125.jpg", text: "山夕月无痕", num: "15", flag: "false" },
+          { src: "../../../../static/images/u132.jpg", text: "风花雪月", num: "53", flag: "false" }
+        ]
+      };
+    },
+    methods: {
+      join(index, flag) {
+        this.flag = !this.flag;
+        formatAppLog("log", "at pages/index/components/island-components/square.vue:54", this.flag);
+        formatAppLog("log", "at pages/index/components/island-components/square.vue:55", index);
+      },
+      getUrl(url) {
+        return new URL(url, document.currentScript && document.currentScript.src || new URL("app-service.js", document.baseURI).href).href;
+      }
+    },
+    components: {
+      shuoshuo
+    }
+  };
+  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_shuoshuo = vue.resolveComponent("shuoshuo");
+    return vue.openBlock(), vue.createElementBlock("view", { class: "square" }, [
+      vue.createCommentVNode(" 横向滚动条开始 "),
+      vue.createElementVNode("scroll-view", {
+        class: "squ-scroll",
+        "scroll-x": "ture"
+      }, [
+        vue.createCommentVNode(" 卡片开始 "),
+        (vue.openBlock(true), vue.createElementBlock(
+          vue.Fragment,
+          null,
+          vue.renderList($data.list, (item, index) => {
+            return vue.openBlock(), vue.createElementBlock("view", {
+              class: "scroll-box",
+              key: index
+            }, [
+              vue.createElementVNode("image", {
+                class: "scroll-img",
+                src: item.src
+              }, null, 8, ["src"]),
+              vue.createElementVNode(
+                "text",
+                { class: "scroll-text" },
+                vue.toDisplayString(item.text),
+                1
+                /* TEXT */
+              ),
+              vue.createElementVNode(
+                "text",
+                {
+                  class: "scroll-text",
+                  style: { "color": "#aaaabd" }
+                },
+                vue.toDisplayString(item.num) + "成员",
+                1
+                /* TEXT */
+              ),
+              vue.createElementVNode("view", {
+                class: "button-group",
+                onClick: ($event) => $options.join(index, item.flag),
+                style: vue.normalizeStyle({ color: _ctx.flag ? "#b2aab2" : "#2fc25b" })
+              }, "＋加入", 12, ["onClick"])
+            ]);
+          }),
+          128
+          /* KEYED_FRAGMENT */
+        )),
+        vue.createCommentVNode(" 卡片结束 ")
+      ]),
+      vue.createCommentVNode(" 横向滚动条结束 "),
+      vue.createCommentVNode(" 说说内容开始 "),
+      vue.createVNode(_component_shuoshuo),
+      vue.createCommentVNode(" 说说内容结束 ")
+    ]);
+  }
+  const square = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__scopeId", "data-v-279cb742"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/island-components/square.vue"]]);
+  const _sfc_main$b = {};
+  function _sfc_render$a(_ctx, _cache) {
+    return vue.openBlock(), vue.createElementBlock("view", { class: "mine" }, "我的页");
+  }
+  const mine = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/island-components/mine.vue"]]);
+  const _sfc_main$a = {
+    data() {
+      return {
+        swipers: [
+          { src: "../../../static/images/点赞.png", text: "每天起床第一句，先给自己打个气" },
+          { src: "../../../static/images/钻石-blue.png", text: "你的专业，摆地摊能干什么？" }
+        ],
+        navIndex: 1,
+        navList: ["广场", "我的"],
+        listIndex: 0
+      };
+    },
+    methods: {
+      getUrl(url) {
+        return new URL(url, document.currentScript && document.currentScript.src || new URL("app-service.js", document.baseURI).href).href;
+      },
+      checkIndex(index) {
+        this.navIndex = index;
+      },
+      checkListIndex(index) {
+        this.listIndex = index;
+      }
+    },
+    components: {
+      square,
+      mine
+    }
+  };
+  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_square = vue.resolveComponent("square");
+    const _component_mine = vue.resolveComponent("mine");
+    return vue.openBlock(), vue.createElementBlock(
+      vue.Fragment,
+      null,
+      [
+        vue.createCommentVNode(" 小岛页 "),
+        vue.createCommentVNode(" 头部滚动条开始 "),
+        vue.createElementVNode("view", { class: "island" }, [
+          vue.createElementVNode("swiper", {
+            circular: "",
+            vertical: "true",
+            autoplay: "true",
+            interval: 3e3
+          }, [
+            (vue.openBlock(true), vue.createElementBlock(
+              vue.Fragment,
+              null,
+              vue.renderList($data.swipers, (item) => {
+                return vue.openBlock(), vue.createElementBlock("swiper-item", { key: item }, [
+                  vue.createElementVNode("view", { class: "img" }, [
+                    vue.createCommentVNode(" 多端处理 "),
+                    vue.createElementVNode("image", {
+                      mode: "aspectFit",
+                      src: item.src
+                    }, null, 8, ["src"])
+                  ]),
+                  vue.createElementVNode(
+                    "text",
+                    { class: "text" },
+                    vue.toDisplayString(item.text),
+                    1
+                    /* TEXT */
+                  )
+                ]);
+              }),
+              128
+              /* KEYED_FRAGMENT */
+            ))
+          ])
+        ]),
+        vue.createCommentVNode(" 头部滚动条结束 "),
+        vue.createCommentVNode(" 子选项卡开始 "),
+        vue.createElementVNode("view", { class: "son-nav" }, [
+          vue.createElementVNode(
+            "view",
+            {
+              class: vue.normalizeClass($data.navIndex == 1 ? "activite" : ""),
+              onClick: _cache[0] || (_cache[0] = ($event) => $options.checkIndex(1))
+            },
+            "广场",
+            2
+            /* CLASS */
+          ),
+          vue.createElementVNode(
+            "view",
+            {
+              class: vue.normalizeClass($data.navIndex == 2 ? "activite" : ""),
+              onClick: _cache[1] || (_cache[1] = ($event) => $options.checkIndex(2))
+            },
+            "我的",
+            2
+            /* CLASS */
+          )
+        ]),
+        vue.createCommentVNode(" 内容切换 "),
+        $data.navIndex == 1 ? (vue.openBlock(), vue.createElementBlock("view", {
+          key: 0,
+          class: "son-content"
+        }, [
+          vue.createVNode(_component_square)
+        ])) : vue.createCommentVNode("v-if", true),
+        $data.navIndex == 2 ? (vue.openBlock(), vue.createElementBlock("view", {
+          key: 1,
+          class: "son-content"
+        }, [
+          vue.createVNode(_component_mine)
+        ])) : vue.createCommentVNode("v-if", true),
+        vue.createCommentVNode(" 子选项卡结束 ")
+      ],
+      64
+      /* STABLE_FRAGMENT */
+    );
+  }
+  const island = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__scopeId", "data-v-d249dff2"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/island.vue"]]);
+  const _sfc_main$9 = {};
+  function _sfc_render$8(_ctx, _cache) {
+    return vue.openBlock(), vue.createElementBlock(
+      vue.Fragment,
+      null,
+      [
+        vue.createCommentVNode(" 专题页面 "),
+        vue.createElementVNode("view", { class: "topic" }, " 专题 ")
+      ],
+      2112
+      /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+    );
+  }
+  const topic = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/topic.vue"]]);
+  const _sfc_main$8 = {};
+  function _sfc_render$7(_ctx, _cache) {
+    return vue.openBlock(), vue.createElementBlock(
+      vue.Fragment,
+      null,
+      [
+        vue.createCommentVNode(" 连载 "),
+        vue.createElementVNode("view", { class: "series" }, " 连载 ")
+      ],
+      2112
+      /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+    );
+  }
+  const series = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/series.vue"]]);
+  let platform = "other";
+  const _sfc_main$7 = {
     name: "UniFab",
     emits: ["fabClick", "trigger"],
     props: {
@@ -1438,8 +2188,8 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$2);
+  function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$3);
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-cursor-point" }, [
       $props.popMenu && ($options.leftBottom || $options.rightBottom || $options.leftTop || $options.rightTop) && $props.content.length > 0 ? (vue.openBlock(), vue.createElementBlock(
         "view",
@@ -1542,593 +2292,34 @@ if (uni.restoreGlobal) {
       )
     ]);
   }
-  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-85f34dfc"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-fab/components/uni-fab/uni-fab.vue"]]);
-  const _sfc_main$d = {
-    name: "uniList",
-    "mp-weixin": {
-      options: {
-        multipleSlots: false
-      }
-    },
-    props: {
-      stackFromEnd: {
-        type: Boolean,
-        default: false
-      },
-      enableBackToTop: {
-        type: [Boolean, String],
-        default: false
-      },
-      scrollY: {
-        type: [Boolean, String],
-        default: false
-      },
-      border: {
-        type: Boolean,
-        default: true
-      },
-      renderReverse: {
-        type: Boolean,
-        default: false
-      }
-    },
-    // provide() {
-    // 	return {
-    // 		list: this
-    // 	};
-    // },
-    created() {
-      this.firstChildAppend = false;
-    },
-    methods: {
-      loadMore(e) {
-        this.$emit("scrolltolower");
-      },
-      scroll(e) {
-        this.$emit("scroll", e);
-      }
-    }
-  };
-  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-list uni-border-top-bottom" }, [
-      $props.border ? (vue.openBlock(), vue.createElementBlock("view", {
-        key: 0,
-        class: "uni-list--border-top"
-      })) : vue.createCommentVNode("v-if", true),
-      vue.renderSlot(_ctx.$slots, "default", {}, void 0, true),
-      $props.border ? (vue.openBlock(), vue.createElementBlock("view", {
-        key: 1,
-        class: "uni-list--border-bottom"
-      })) : vue.createCommentVNode("v-if", true)
-    ]);
-  }
-  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__scopeId", "data-v-c2f1266a"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-list/components/uni-list/uni-list.vue"]]);
-  const _sfc_main$c = {
-    name: "UniCard",
-    emits: ["click"],
-    props: {
-      title: {
-        type: String,
-        default: ""
-      },
-      subTitle: {
-        type: String,
-        default: ""
-      },
-      padding: {
-        type: String,
-        default: "10px"
-      },
-      margin: {
-        type: String,
-        default: "15px"
-      },
-      spacing: {
-        type: String,
-        default: "0 10px"
-      },
-      extra: {
-        type: String,
-        default: ""
-      },
-      cover: {
-        type: String,
-        default: ""
-      },
-      thumbnail: {
-        type: String,
-        default: ""
-      },
-      isFull: {
-        // 内容区域是否通栏
-        type: Boolean,
-        default: false
-      },
-      isShadow: {
-        // 是否开启阴影
-        type: Boolean,
-        default: true
-      },
-      shadow: {
-        type: String,
-        default: "0px 0px 3px 1px rgba(0, 0, 0, 0.08)"
-      },
-      border: {
-        type: Boolean,
-        default: true
-      }
-    },
-    methods: {
-      onClick(type) {
-        this.$emit("click", type);
-      }
-    }
-  };
-  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock(
-      "view",
-      {
-        class: vue.normalizeClass(["uni-card", { "uni-card--full": $props.isFull, "uni-card--shadow": $props.isShadow, "uni-card--border": $props.border }]),
-        style: vue.normalizeStyle({ "margin": $props.isFull ? 0 : $props.margin, "padding": $props.spacing, "box-shadow": $props.isShadow ? $props.shadow : "" })
-      },
-      [
-        vue.createCommentVNode(" 封面 "),
-        vue.renderSlot(_ctx.$slots, "cover", {}, () => [
-          $props.cover ? (vue.openBlock(), vue.createElementBlock("view", {
-            key: 0,
-            class: "uni-card__cover"
-          }, [
-            vue.createElementVNode("image", {
-              class: "uni-card__cover-image",
-              mode: "widthFix",
-              onClick: _cache[0] || (_cache[0] = ($event) => $options.onClick("cover")),
-              src: $props.cover
-            }, null, 8, ["src"])
-          ])) : vue.createCommentVNode("v-if", true)
-        ], true),
-        vue.renderSlot(_ctx.$slots, "title", {}, () => [
-          $props.title || $props.extra ? (vue.openBlock(), vue.createElementBlock("view", {
-            key: 0,
-            class: "uni-card__header"
-          }, [
-            vue.createCommentVNode(" 卡片标题 "),
-            vue.createElementVNode("view", {
-              class: "uni-card__header-box",
-              onClick: _cache[1] || (_cache[1] = ($event) => $options.onClick("title"))
-            }, [
-              $props.thumbnail ? (vue.openBlock(), vue.createElementBlock("view", {
-                key: 0,
-                class: "uni-card__header-avatar"
-              }, [
-                vue.createElementVNode("image", {
-                  class: "uni-card__header-avatar-image",
-                  src: $props.thumbnail,
-                  mode: "aspectFit"
-                }, null, 8, ["src"])
-              ])) : vue.createCommentVNode("v-if", true),
-              vue.createElementVNode("view", { class: "uni-card__header-content" }, [
-                vue.createElementVNode(
-                  "text",
-                  { class: "uni-card__header-content-title uni-ellipsis" },
-                  vue.toDisplayString($props.title),
-                  1
-                  /* TEXT */
-                ),
-                $props.title && $props.subTitle ? (vue.openBlock(), vue.createElementBlock(
-                  "text",
-                  {
-                    key: 0,
-                    class: "uni-card__header-content-subtitle uni-ellipsis"
-                  },
-                  vue.toDisplayString($props.subTitle),
-                  1
-                  /* TEXT */
-                )) : vue.createCommentVNode("v-if", true)
-              ])
-            ]),
-            vue.createElementVNode("view", {
-              class: "uni-card__header-extra",
-              onClick: _cache[2] || (_cache[2] = ($event) => $options.onClick("extra"))
-            }, [
-              vue.createElementVNode(
-                "text",
-                { class: "uni-card__header-extra-text" },
-                vue.toDisplayString($props.extra),
-                1
-                /* TEXT */
-              )
-            ])
-          ])) : vue.createCommentVNode("v-if", true)
-        ], true),
-        vue.createCommentVNode(" 卡片内容 "),
-        vue.createElementVNode(
-          "view",
-          {
-            class: "uni-card__content",
-            style: vue.normalizeStyle({ padding: $props.padding }),
-            onClick: _cache[3] || (_cache[3] = ($event) => $options.onClick("content"))
-          },
-          [
-            vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
-          ],
-          4
-          /* STYLE */
-        ),
-        vue.createElementVNode("view", {
-          class: "uni-card__actions",
-          onClick: _cache[4] || (_cache[4] = ($event) => $options.onClick("actions"))
-        }, [
-          vue.renderSlot(_ctx.$slots, "actions", {}, void 0, true)
-        ])
-      ],
-      6
-      /* CLASS, STYLE */
-    );
-  }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__scopeId", "data-v-81f163d7"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/node_modules/@dcloudio/uni-ui/lib/uni-card/uni-card.vue"]]);
-  const _sfc_main$b = {
-    data() {
-      return {
-        // 卡片内容数据
-        dataList: [
-          { id: 1, title: "如何搭建领导想要的管理驾驶舱，这篇方法论值得收藏", src: "../../../static/images/r1.png", id: "数据分析不是个事儿", data: "164 阅读 0 评论 0 赞 " },
-          { id: 2, title: "推荐一款优秀的跨平台文件传输工具-AirDroid", src: "../../../static/images/r2.png", id: "APP实验室", data: "47阅读 0 评论 3赞" },
-          { id: 3, title: "自己以为很红，却压根没多少个粉丝的3位明星，拜托清醒一点", src: "../../../static/images/r3.png", id: "暴走怪咖豆", data: "468 阅读 0 评论 12 赞" },
-          { id: 4, title: "低代码开发平台有哪些？", src: "../../../static/images/r4.png", id: "JEECG开源社区", data: "90 阅读 0 评论 1 赞" },
-          { id: 5, title: "手机不安装这几个软件，简直太亏", src: "../../../static/images/r5.png", id: "驻地氧气瓶", data: " 432 阅读 0 评论 3 赞" },
-          { id: 6, title: "【经验】UI设计师是如何工作的？", src: "../../../static/images/r6.png", id: "摹客", data: " 264 阅读 0 评论 5 赞" }
-        ]
-      };
-    },
-    methods: {
-      getUrl(url) {
-        return new URL(url, document.currentScript && document.currentScript.src || new URL("app-service.js", document.baseURI).href).href;
-      }
-    }
-  };
-  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_list = resolveEasycom(vue.resolveDynamicComponent("uni-list"), __easycom_0);
-    const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_1);
-    const _component_cell = vue.resolveComponent("cell");
-    const _component_list = vue.resolveComponent("list");
-    return vue.openBlock(), vue.createElementBlock(
-      vue.Fragment,
-      null,
-      [
-        vue.createCommentVNode(" 推荐页 "),
-        vue.createElementVNode("view", { class: "recommend" }, [
-          vue.createVNode(_component_list, null, {
-            default: vue.withCtx(() => [
-              (vue.openBlock(true), vue.createElementBlock(
-                vue.Fragment,
-                null,
-                vue.renderList($data.dataList, (item, index) => {
-                  return vue.openBlock(), vue.createBlock(
-                    _component_cell,
-                    {
-                      key: item.id
-                    },
-                    {
-                      default: vue.withCtx(() => [
-                        vue.createCommentVNode(" 卡片开始 "),
-                        vue.createVNode(
-                          _component_uni_card,
-                          {
-                            shadow: "none",
-                            margin: "6rpx 0 10rpx 0",
-                            border: "false"
-                          },
-                          {
-                            title: vue.withCtx(() => [
-                              vue.createVNode(
-                                _component_uni_list,
-                                null,
-                                {
-                                  default: vue.withCtx(() => [
-                                    vue.createElementVNode(
-                                      "text",
-                                      { class: "title" },
-                                      vue.toDisplayString(item.title),
-                                      1
-                                      /* TEXT */
-                                    )
-                                  ]),
-                                  _: 2
-                                  /* DYNAMIC */
-                                },
-                                1024
-                                /* DYNAMIC_SLOTS */
-                              )
-                            ]),
-                            default: vue.withCtx(() => [
-                              vue.createElementVNode("image", {
-                                mode: "scaleToFill",
-                                src: item.src
-                              }, null, 8, ["src"]),
-                              vue.createElementVNode("view", {
-                                slot: "actions",
-                                class: "card-actions"
-                              }, [
-                                vue.createElementVNode("view", { class: "card-actions-item" }, [
-                                  vue.createElementVNode(
-                                    "text",
-                                    { class: "card-actions-item-text" },
-                                    vue.toDisplayString(item.id),
-                                    1
-                                    /* TEXT */
-                                  ),
-                                  vue.createElementVNode(
-                                    "text",
-                                    { class: "card-actions-item-text" },
-                                    vue.toDisplayString(item.data),
-                                    1
-                                    /* TEXT */
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _: 2
-                            /* DYNAMIC */
-                          },
-                          1024
-                          /* DYNAMIC_SLOTS */
-                        ),
-                        vue.createCommentVNode(" 卡片结束 ")
-                      ]),
-                      _: 2
-                      /* DYNAMIC */
-                    },
-                    1024
-                    /* DYNAMIC_SLOTS */
-                  );
-                }),
-                128
-                /* KEYED_FRAGMENT */
-              ))
-            ]),
-            _: 1
-            /* STABLE */
-          })
-        ])
-      ],
-      2112
-      /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
-    );
-  }
-  const recommend = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__scopeId", "data-v-81bb5221"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/recommend.vue"]]);
-  const _sfc_main$a = {
-    data() {
-      return {
-        j: false,
-        list: [
-          { src: "../../../../static/images/u56.jpg", text: "我们爱画画", num: "306" },
-          { src: "../../../../static/images/u62.jpg", text: "彦姐书的…", num: "550" },
-          { src: "../../../../static/images/u69.jpg", text: "情感事务所", num: "5229" },
-          { src: "../../../../static/images/u76.jpg", text: "微博故事", num: "181" },
-          { src: "../../../../static/images/u83.jpg", text: "为你高兴", num: "17" },
-          { src: "../../../../static/images/u90.jpg", text: "吐槽那些…", num: "53" },
-          { src: "../../../../static/images/u97.jpg", text: "魔都生活", num: "13" },
-          { src: "../../../../static/images/u104.jpg", text: "时光小岛", num: "12" },
-          { src: "../../../../static/images/u111.jpg", text: "90后相亲", num: "20" },
-          { src: "../../../../static/images/u118.jpg", text: "因为爱情", num: "3" },
-          { src: "../../../../static/images/u125.jpg", text: "山夕月无痕", num: "15" },
-          { src: "../../../../static/images/u132.jpg", text: "风花雪月", num: "53" }
-        ]
-      };
-    },
-    methods: {
-      join() {
-        this.j = !this.j;
-      },
-      getUrl(url) {
-        return new URL(url, document.currentScript && document.currentScript.src || new URL("app-service.js", document.baseURI).href).href;
-      }
-    }
-  };
-  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("view", { class: "square" }, [
-      vue.createElementVNode("scroll-view", {
-        class: "squ-scroll",
-        "scroll-x": "ture"
-      }, [
-        vue.createCommentVNode(" 卡片开始 "),
-        (vue.openBlock(true), vue.createElementBlock(
-          vue.Fragment,
-          null,
-          vue.renderList($data.list, (item, index) => {
-            return vue.openBlock(), vue.createElementBlock("view", {
-              class: "scroll-box",
-              key: item.id
-            }, [
-              vue.createElementVNode("image", {
-                class: "scroll-img",
-                src: item.src
-              }, null, 8, ["src"]),
-              vue.createElementVNode(
-                "text",
-                { class: "scroll-text" },
-                vue.toDisplayString(item.text),
-                1
-                /* TEXT */
-              ),
-              vue.createElementVNode(
-                "text",
-                {
-                  class: "scroll-text",
-                  style: { "color": "#aaaabd" }
-                },
-                vue.toDisplayString(item.num) + "成员",
-                1
-                /* TEXT */
-              ),
-              vue.createElementVNode(
-                "view",
-                {
-                  class: "button-group",
-                  onClick: _cache[0] || (_cache[0] = (...args) => $options.join && $options.join(...args)),
-                  style: vue.normalizeStyle({ color: $data.j ? "#b2aab2" : "#2fc25b" })
-                },
-                "＋加入",
-                4
-                /* STYLE */
-              )
-            ]);
-          }),
-          128
-          /* KEYED_FRAGMENT */
-        )),
-        vue.createCommentVNode(" 卡片结束 ")
-      ])
-    ]);
-  }
-  const square = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__scopeId", "data-v-279cb742"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/island-components/square.vue"]]);
-  const _sfc_main$9 = {};
-  function _sfc_render$8(_ctx, _cache) {
-    return vue.openBlock(), vue.createElementBlock("view", { class: "mine" }, "我的页");
-  }
-  const mine = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/island-components/mine.vue"]]);
-  const _sfc_main$8 = {
-    data() {
-      return {
-        swipers: [
-          { src: "../../../static/images/点赞.png", text: "每天起床第一句，先给自己打个气" },
-          { src: "../../../static/images/钻石-blue.png", text: "你的专业，摆地摊能干什么？" }
-        ],
-        navIndex: 1,
-        navList: ["广场", "我的"],
-        listIndex: 0
-      };
-    },
-    methods: {
-      getUrl(url) {
-        return new URL(url, document.currentScript && document.currentScript.src || new URL("app-service.js", document.baseURI).href).href;
-      },
-      checkIndex(index) {
-        this.navIndex = index;
-      },
-      checkListIndex(index) {
-        this.listIndex = index;
-      }
-    },
-    components: {
-      square,
-      mine
-    }
-  };
-  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_square = vue.resolveComponent("square");
-    const _component_mine = vue.resolveComponent("mine");
-    return vue.openBlock(), vue.createElementBlock(
-      vue.Fragment,
-      null,
-      [
-        vue.createCommentVNode(" 小岛页 "),
-        vue.createCommentVNode(" 头部滚动条开始 "),
-        vue.createElementVNode("view", { class: "island" }, [
-          vue.createElementVNode("swiper", {
-            circular: "",
-            vertical: "true",
-            autoplay: "true",
-            interval: 3e3
-          }, [
-            (vue.openBlock(true), vue.createElementBlock(
-              vue.Fragment,
-              null,
-              vue.renderList($data.swipers, (item) => {
-                return vue.openBlock(), vue.createElementBlock("swiper-item", { key: item }, [
-                  vue.createElementVNode("view", { class: "img" }, [
-                    vue.createCommentVNode(" 多端处理 "),
-                    vue.createElementVNode("image", {
-                      mode: "aspectFit",
-                      src: item.src
-                    }, null, 8, ["src"])
-                  ]),
-                  vue.createElementVNode(
-                    "text",
-                    { class: "text" },
-                    vue.toDisplayString(item.text),
-                    1
-                    /* TEXT */
-                  )
-                ]);
-              }),
-              128
-              /* KEYED_FRAGMENT */
-            ))
-          ])
-        ]),
-        vue.createCommentVNode(" 头部滚动条结束 "),
-        vue.createCommentVNode(" 子选项卡开始 "),
-        vue.createElementVNode("view", { class: "son-nav" }, [
-          vue.createElementVNode(
-            "view",
-            {
-              class: vue.normalizeClass($data.navIndex == 1 ? "activite" : ""),
-              onClick: _cache[0] || (_cache[0] = ($event) => $options.checkIndex(1))
-            },
-            "广场",
-            2
-            /* CLASS */
-          ),
-          vue.createElementVNode(
-            "view",
-            {
-              class: vue.normalizeClass($data.navIndex == 2 ? "activite" : ""),
-              onClick: _cache[1] || (_cache[1] = ($event) => $options.checkIndex(2))
-            },
-            "我的",
-            2
-            /* CLASS */
-          )
-        ]),
-        vue.createCommentVNode(" 内容切换 "),
-        $data.navIndex == 1 ? (vue.openBlock(), vue.createElementBlock("view", {
-          key: 0,
-          class: "son-content"
-        }, [
-          vue.createVNode(_component_square)
-        ])) : vue.createCommentVNode("v-if", true),
-        $data.navIndex == 2 ? (vue.openBlock(), vue.createElementBlock("view", {
-          key: 1,
-          class: "son-content"
-        }, [
-          vue.createVNode(_component_mine)
-        ])) : vue.createCommentVNode("v-if", true),
-        vue.createCommentVNode(" 子选项卡结束 ")
-      ],
-      64
-      /* STABLE_FRAGMENT */
-    );
-  }
-  const island = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__scopeId", "data-v-d249dff2"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/island.vue"]]);
-  const _sfc_main$7 = {};
-  function _sfc_render$6(_ctx, _cache) {
-    return vue.openBlock(), vue.createElementBlock(
-      vue.Fragment,
-      null,
-      [
-        vue.createCommentVNode(" 专题页面 "),
-        vue.createElementVNode("view", { class: "topic" }, " 专题 ")
-      ],
-      2112
-      /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
-    );
-  }
-  const topic = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/topic.vue"]]);
+  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__scopeId", "data-v-85f34dfc"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-fab/components/uni-fab/uni-fab.vue"]]);
   const _sfc_main$6 = {};
   function _sfc_render$5(_ctx, _cache) {
+    const _component_uni_fab = resolveEasycom(vue.resolveDynamicComponent("uni-fab"), __easycom_0);
     return vue.openBlock(), vue.createElementBlock(
       vue.Fragment,
       null,
       [
-        vue.createCommentVNode(" 连载 "),
-        vue.createElementVNode("view", { class: "series" }, " 连载 ")
+        vue.createCommentVNode(" 悬浮按钮开始 "),
+        vue.createElementVNode("view", null, [
+          vue.createVNode(_component_uni_fab, {
+            pattern: _ctx.pattern,
+            content: _ctx.content,
+            horizontal: "right",
+            vertical: "bottom",
+            direction: "horizontal",
+            popMenu: true,
+            onTrigger: _ctx.trigger,
+            onFabClick: _ctx.fabClick
+          }, null, 8, ["pattern", "content", "onTrigger", "onFabClick"])
+        ]),
+        vue.createCommentVNode(" 悬浮按钮结束 ")
       ],
       2112
       /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
     );
   }
-  const series = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/series.vue"]]);
+  const ball = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__scopeId", "data-v-67b0a0ab"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/island-components/ball.vue"]]);
   const _sfc_main$5 = {
     data() {
       return {
@@ -2145,7 +2336,8 @@ if (uni.restoreGlobal) {
       recommend,
       island,
       topic,
-      series
+      series,
+      ball
     },
     created() {
       const info = uni.getSystemInfoSync();
@@ -2153,12 +2345,12 @@ if (uni.restoreGlobal) {
     }
   };
   function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_search_bar = resolveEasycom(vue.resolveDynamicComponent("uni-search-bar"), __easycom_0$1);
+    const _component_uni_search_bar = resolveEasycom(vue.resolveDynamicComponent("uni-search-bar"), __easycom_0$2);
     const _component_recommend = vue.resolveComponent("recommend");
+    const _component_ball = vue.resolveComponent("ball");
     const _component_island = vue.resolveComponent("island");
     const _component_topic = vue.resolveComponent("topic");
     const _component_series = vue.resolveComponent("series");
-    const _component_uni_fab = resolveEasycom(vue.resolveDynamicComponent("uni-fab"), __easycom_1$1);
     return vue.openBlock(), vue.createElementBlock("view", { class: "index" }, [
       vue.createCommentVNode(" 状态栏开始 "),
       vue.createElementVNode(
@@ -2237,7 +2429,8 @@ if (uni.restoreGlobal) {
           style: vue.normalizeStyle({ top: $data.statusBarHeight + 94.61 + "px" })
         },
         [
-          vue.createVNode(_component_recommend)
+          vue.createVNode(_component_recommend),
+          vue.createVNode(_component_ball)
         ],
         4
         /* STYLE */
@@ -2284,21 +2477,7 @@ if (uni.restoreGlobal) {
         4
         /* STYLE */
       )) : vue.createCommentVNode("v-if", true),
-      vue.createCommentVNode(" 选项卡结束 "),
-      vue.createCommentVNode(" 悬浮按钮开始 "),
-      vue.createElementVNode("view", null, [
-        vue.createVNode(_component_uni_fab, {
-          pattern: _ctx.pattern,
-          content: _ctx.content,
-          horizontal: "right",
-          vertical: "bottom",
-          direction: "horizontal",
-          popMenu: true,
-          onTrigger: _ctx.trigger,
-          onFabClick: _ctx.fabClick
-        }, null, 8, ["pattern", "content", "onTrigger", "onFabClick"])
-      ]),
-      vue.createCommentVNode(" 悬浮按钮结束 ")
+      vue.createCommentVNode(" 选项卡结束 ")
     ]);
   }
   const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/index.vue"]]);

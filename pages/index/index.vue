@@ -21,6 +21,7 @@
 		<!-- 推荐页 -->
 		<view class="content" :style="{ top: statusBarHeight + 94.61 + 'px' }" v-if="navIndex == 1">
 			<recommend></recommend>
+			<ball></ball>
 		</view>
 		<!-- 小岛页 -->
 		<view class="content" :style="{ top: statusBarHeight + 94.61 + 'px' }" v-if="navIndex == 2">
@@ -36,12 +37,6 @@
 		</view>
 
 		<!-- 选项卡结束 -->
-
-		<!-- 悬浮按钮开始 -->
-		<view>
-			<uni-fab :pattern="pattern" :content="content" horizontal="right" vertical="bottom" direction="horizontal" :popMenu="true" @trigger="trigger" @fabClick="fabClick" />
-		</view>
-		<!-- 悬浮按钮结束 -->
 	</view>
 </template>
 
@@ -50,6 +45,7 @@ import recommend from './components/recommend.vue';
 import island from './components/island.vue';
 import topic from './components/topic.vue';
 import series from './components/series.vue';
+import ball from './components/island-components/ball.vue';
 
 export default {
 	data() {
@@ -67,7 +63,8 @@ export default {
 		recommend,
 		island,
 		topic,
-		series
+		series,
+		ball
 	},
 	created() {
 		// 获取手机系统信息
@@ -129,10 +126,4 @@ export default {
 	background: #008000;
 }
 /* 选项卡结束 */
-
-/* 悬浮按钮开始 */
-:deep(.uni-fab__content--other-platform) {
-	box-shadow: none !important;
-}
-/* 悬浮按钮结束 */
 </style>
