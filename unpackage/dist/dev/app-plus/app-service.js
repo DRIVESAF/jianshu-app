@@ -757,7 +757,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-d31e1c47"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
+  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-d31e1c47"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
   function formatAppLog(type, filename, ...args) {
     if (uni.__log__) {
       uni.__log__(type, filename, ...args);
@@ -1205,7 +1205,7 @@ if (uni.restoreGlobal) {
     }
   };
   function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$3);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$2);
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-searchbar" }, [
       vue.createElementVNode(
         "view",
@@ -1279,7 +1279,7 @@ if (uni.restoreGlobal) {
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-a149a6be"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.vue"]]);
+  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-a149a6be"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.vue"]]);
   let platform = "other";
   const _sfc_main$e = {
     name: "UniFab",
@@ -1439,7 +1439,7 @@ if (uni.restoreGlobal) {
     }
   };
   function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$3);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$2);
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-cursor-point" }, [
       $props.popMenu && ($options.leftBottom || $options.rightBottom || $options.leftTop || $options.rightTop) && $props.content.length > 0 ? (vue.openBlock(), vue.createElementBlock(
         "view",
@@ -1542,7 +1542,7 @@ if (uni.restoreGlobal) {
       )
     ]);
   }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-85f34dfc"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-fab/components/uni-fab/uni-fab.vue"]]);
+  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-85f34dfc"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-fab/components/uni-fab/uni-fab.vue"]]);
   const _sfc_main$d = {
     name: "uniList",
     "mp-weixin": {
@@ -1602,7 +1602,7 @@ if (uni.restoreGlobal) {
       })) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__scopeId", "data-v-c2f1266a"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-list/components/uni-list/uni-list.vue"]]);
+  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__scopeId", "data-v-c2f1266a"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/uni_modules/uni-list/components/uni-list/uni-list.vue"]]);
   const _sfc_main$c = {
     name: "UniCard",
     emits: ["click"],
@@ -1765,7 +1765,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__scopeId", "data-v-81f163d7"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/node_modules/@dcloudio/uni-ui/lib/uni-card/uni-card.vue"]]);
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__scopeId", "data-v-81f163d7"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/node_modules/@dcloudio/uni-ui/lib/uni-card/uni-card.vue"]]);
   const _sfc_main$b = {
     data() {
       return {
@@ -1787,8 +1787,8 @@ if (uni.restoreGlobal) {
     }
   };
   function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_list = resolveEasycom(vue.resolveDynamicComponent("uni-list"), __easycom_0$1);
-    const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_0);
+    const _component_uni_list = resolveEasycom(vue.resolveDynamicComponent("uni-list"), __easycom_0);
+    const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_1);
     const _component_cell = vue.resolveComponent("cell");
     const _component_list = vue.resolveComponent("list");
     return vue.openBlock(), vue.createElementBlock(
@@ -1896,64 +1896,87 @@ if (uni.restoreGlobal) {
     );
   }
   const recommend = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__scopeId", "data-v-81bb5221"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/recommend.vue"]]);
-  const _sfc_main$a = {};
-  function _sfc_render$9(_ctx, _cache) {
-    const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_0);
+  const _sfc_main$a = {
+    data() {
+      return {
+        j: false,
+        list: [
+          { src: "../../../../static/images/u56.jpg", text: "我们爱画画", num: "306" },
+          { src: "../../../../static/images/u62.jpg", text: "彦姐书的…", num: "550" },
+          { src: "../../../../static/images/u69.jpg", text: "情感事务所", num: "5229" },
+          { src: "../../../../static/images/u76.jpg", text: "微博故事", num: "181" },
+          { src: "../../../../static/images/u83.jpg", text: "为你高兴", num: "17" },
+          { src: "../../../../static/images/u90.jpg", text: "吐槽那些…", num: "53" },
+          { src: "../../../../static/images/u97.jpg", text: "魔都生活", num: "13" },
+          { src: "../../../../static/images/u104.jpg", text: "时光小岛", num: "12" },
+          { src: "../../../../static/images/u111.jpg", text: "90后相亲", num: "20" },
+          { src: "../../../../static/images/u118.jpg", text: "因为爱情", num: "3" },
+          { src: "../../../../static/images/u125.jpg", text: "山夕月无痕", num: "15" },
+          { src: "../../../../static/images/u132.jpg", text: "风花雪月", num: "53" }
+        ]
+      };
+    },
+    methods: {
+      join() {
+        this.j = !this.j;
+      },
+      getUrl(url) {
+        return new URL(url, document.currentScript && document.currentScript.src || new URL("app-service.js", document.baseURI).href).href;
+      }
+    }
+  };
+  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "square" }, [
       vue.createElementVNode("scroll-view", {
         class: "squ-scroll",
         "scroll-x": "ture"
       }, [
         vue.createCommentVNode(" 卡片开始 "),
-        vue.createElementVNode("view", { class: "scroll-box" }, [
-          vue.createVNode(_component_uni_card, {
-            title: "基础卡片",
-            isFull: true,
-            "sub-title": "副标题",
-            extra: "额外信息",
-            thumbnail: _ctx.avatar
-          }, {
-            default: vue.withCtx(() => [
-              vue.createElementVNode("text", { class: "uni-body" }, "这是一个通栏卡片 ，通栏没有外边距，左右会贴合父元素。")
-            ]),
-            _: 1
-            /* STABLE */
-          }, 8, ["thumbnail"])
-        ]),
-        vue.createCommentVNode(" 卡片结束 "),
-        vue.createCommentVNode(" 卡片开始 "),
-        vue.createElementVNode("view", { class: "scroll-box" }, [
-          vue.createVNode(_component_uni_card, {
-            title: "基础卡片",
-            isFull: true,
-            "sub-title": "副标题",
-            extra: "额外信息",
-            thumbnail: _ctx.avatar
-          }, {
-            default: vue.withCtx(() => [
-              vue.createElementVNode("text", { class: "uni-body" }, "这是一个通栏卡片 ，通栏没有外边距，左右会贴合父元素。")
-            ]),
-            _: 1
-            /* STABLE */
-          }, 8, ["thumbnail"])
-        ]),
-        vue.createCommentVNode(" 卡片结束 "),
-        vue.createCommentVNode(" 卡片开始 "),
-        vue.createElementVNode("view", { class: "scroll-box" }, [
-          vue.createVNode(_component_uni_card, {
-            title: "基础卡片",
-            isFull: true,
-            "sub-title": "副标题",
-            extra: "额外信息",
-            thumbnail: _ctx.avatar
-          }, {
-            default: vue.withCtx(() => [
-              vue.createElementVNode("text", { class: "uni-body" }, "这是一个通栏卡片 ，通栏没有外边距，左右会贴合父元素。")
-            ]),
-            _: 1
-            /* STABLE */
-          }, 8, ["thumbnail"])
-        ]),
+        (vue.openBlock(true), vue.createElementBlock(
+          vue.Fragment,
+          null,
+          vue.renderList($data.list, (item, index) => {
+            return vue.openBlock(), vue.createElementBlock("view", {
+              class: "scroll-box",
+              key: item.id
+            }, [
+              vue.createElementVNode("image", {
+                class: "scroll-img",
+                src: item.src
+              }, null, 8, ["src"]),
+              vue.createElementVNode(
+                "text",
+                { class: "scroll-text" },
+                vue.toDisplayString(item.text),
+                1
+                /* TEXT */
+              ),
+              vue.createElementVNode(
+                "text",
+                {
+                  class: "scroll-text",
+                  style: { "color": "#aaaabd" }
+                },
+                vue.toDisplayString(item.num) + "成员",
+                1
+                /* TEXT */
+              ),
+              vue.createElementVNode(
+                "view",
+                {
+                  class: "button-group",
+                  onClick: _cache[0] || (_cache[0] = (...args) => $options.join && $options.join(...args)),
+                  style: vue.normalizeStyle({ color: $data.j ? "#b2aab2" : "#2fc25b" })
+                },
+                "＋加入",
+                4
+                /* STYLE */
+              )
+            ]);
+          }),
+          128
+          /* KEYED_FRAGMENT */
+        )),
         vue.createCommentVNode(" 卡片结束 ")
       ])
     ]);
@@ -2130,12 +2153,12 @@ if (uni.restoreGlobal) {
     }
   };
   function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_search_bar = resolveEasycom(vue.resolveDynamicComponent("uni-search-bar"), __easycom_0$2);
+    const _component_uni_search_bar = resolveEasycom(vue.resolveDynamicComponent("uni-search-bar"), __easycom_0$1);
     const _component_recommend = vue.resolveComponent("recommend");
     const _component_island = vue.resolveComponent("island");
     const _component_topic = vue.resolveComponent("topic");
     const _component_series = vue.resolveComponent("series");
-    const _component_uni_fab = resolveEasycom(vue.resolveDynamicComponent("uni-fab"), __easycom_1);
+    const _component_uni_fab = resolveEasycom(vue.resolveDynamicComponent("uni-fab"), __easycom_1$1);
     return vue.openBlock(), vue.createElementBlock("view", { class: "index" }, [
       vue.createCommentVNode(" 状态栏开始 "),
       vue.createElementVNode(

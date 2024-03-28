@@ -1002,8 +1002,35 @@ uni-image[data-v-81bb5221] {
   display: flex !important;
 }
 .scroll-box[data-v-279cb742] {
+  background-color: #fff;
   flex-shrink: 0;
-  width: 50%;
+  width: 32%;
+  height: 11.875rem;
+  padding: 0.3125rem;
+}
+.scroll-img[data-v-279cb742] {
+  width: 100%;
+  height: 50%;
+  float: left;
+}
+.scroll-text[data-v-279cb742] {
+  text-align: center;
+  display: block;
+  padding: 0.125rem;
+}
+uni-image[data-v-279cb742] {
+  display: inline;
+  opacity: inherit;
+  height: auto;
+  width: auto;
+  padding-bottom: 0.625rem;
+}
+.button-group[data-v-279cb742] {
+  border: 0.125rem solid;
+  width: 60%;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 0.21875rem auto;
 }
 /**
  * 这里是uni-app内置的常用样式变量
