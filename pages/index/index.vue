@@ -23,15 +23,15 @@
 			<recommend></recommend>
 		</view>
 		<!-- 小岛页 -->
-		<view class="" v-if="navIndex == 2">
+		<view class="content" :style="{ top: statusBarHeight + 94.61 + 'px' }" v-if="navIndex == 2">
 			<island></island>
 		</view>
 		<!-- 专题页 -->
-		<view class="content" v-if="navIndex == 3">
+		<view class="content" :style="{ top: statusBarHeight + 94.61 + 'px' }" v-if="navIndex == 3">
 			<topic></topic>
 		</view>
 		<!-- 连载页 -->
-		<view class="content" v-if="navIndex == 4">
+		<view class="content" :style="{ top: statusBarHeight + 94.61 + 'px' }" v-if="navIndex == 4">
 			<series></series>
 		</view>
 

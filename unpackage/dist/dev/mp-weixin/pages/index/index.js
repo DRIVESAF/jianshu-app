@@ -64,14 +64,20 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     m: $data.statusBarHeight + 94.61 + "px"
   } : {}, {
     n: $data.navIndex == 2
-  }, $data.navIndex == 2 ? {} : {}, {
-    o: $data.navIndex == 3
-  }, $data.navIndex == 3 ? {} : {}, {
-    p: $data.navIndex == 4
-  }, $data.navIndex == 4 ? {} : {}, {
-    q: common_vendor.o(_ctx.trigger),
-    r: common_vendor.o(_ctx.fabClick),
-    s: common_vendor.p({
+  }, $data.navIndex == 2 ? {
+    o: $data.statusBarHeight + 94.61 + "px"
+  } : {}, {
+    p: $data.navIndex == 3
+  }, $data.navIndex == 3 ? {
+    q: $data.statusBarHeight + 94.61 + "px"
+  } : {}, {
+    r: $data.navIndex == 4
+  }, $data.navIndex == 4 ? {
+    s: $data.statusBarHeight + 94.61 + "px"
+  } : {}, {
+    t: common_vendor.o(_ctx.trigger),
+    v: common_vendor.o(_ctx.fabClick),
+    w: common_vendor.p({
       pattern: _ctx.pattern,
       content: _ctx.content,
       horizontal: "right",
