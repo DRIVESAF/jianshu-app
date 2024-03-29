@@ -37,6 +37,10 @@
 	height: 80rpx;
 }
 
+.h-20 {
+	height: 200rpx;
+}
+
 /* 宽度 */
 /* #ifndef APP-PLUS-NVUE */
 .w-100 {
@@ -214,6 +218,10 @@
 
 .justify-between {
 	justify-content: space-between;
+}
+
+.justify-around {
+	justify-content: space-around;
 }
 
 .justify-evenly {
@@ -698,37 +706,37 @@
 	padding-bottom: 50rpx;
 }
 
-.px-0 {
+NaNrpx-0 {
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.px-1 {
+NaNrpx-1 {
 	padding-left: 10rpx;
 	padding-right: 10rpx;
 }
 
-.px {
+NaNrpx {
 	padding-left: 5rpx;
 	padding-right: 5rpx;
 }
 
-.px-2 {
+NaNrpx-2 {
 	padding-left: 20rpx;
 	padding-right: 20rpx;
 }
 
-.px-3 {
+NaNrpx-3 {
 	padding-left: 30rpx;
 	padding-right: 30rpx;
 }
 
-.px-4 {
+NaNrpx-4 {
 	padding-left: 40rpx;
 	padding-right: 40rpx;
 }
 
-.px-5 {
+NaNrpx-5 {
 	padding-left: 50rpx;
 	padding-right: 50rpx;
 }
@@ -1246,3 +1254,11 @@
 }
 
 /* #endif */
+
+.transform-y-100 {
+	transform: translateY(100%);
+}
+
+.transform-y-30 {
+	transform: translateY(30%);
+}
