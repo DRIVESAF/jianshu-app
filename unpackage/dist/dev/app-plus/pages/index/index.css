@@ -987,6 +987,48 @@ uni-image[data-v-d249dff2] {
 	color: #aaaaaa;
 }
 
+
+.tools[data-v-7e4878cd] {
+	height: 3.8125rem;
+	width: 100%;
+}
+.tools-icon[data-v-7e4878cd] {
+	width: 1.875rem;
+	height: 2.1875rem;
+}
+.name[data-v-7e4878cd] {
+	font-size: 0.8125rem;
+}
+.concern[data-v-7e4878cd] {
+	height: 2.5rem;
+}
+.concern-icon[data-v-7e4878cd] {
+	width: 1.6875rem;
+	height: 1.6875rem;
+}
+.title[data-v-7e4878cd] {
+	font-size: 0.9375rem;
+}
+.column[data-v-7e4878cd] {
+	padding: 0.9375rem;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+	background: #fff;
+}
+.column-son[data-v-7e4878cd] {
+	width: 6.25rem;
+	height: 13.4375rem;
+	justify-content: space-between;
+}
+.column-cover[data-v-7e4878cd] {
+	height: 9.375rem;
+}
+.column-tip[data-v-7e4878cd] {
+	height: 1.25rem;
+	font-size: 0.75rem;
+	color: #aaaaaa;
+}
+
 /**
  * 这里是uni-app内置的常用样式变量
  *

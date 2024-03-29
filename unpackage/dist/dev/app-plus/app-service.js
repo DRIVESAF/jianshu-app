@@ -2133,20 +2133,128 @@ if (uni.restoreGlobal) {
     );
   }
   const topic = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__scopeId", "data-v-67877be5"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/topic.vue"]]);
-  const _sfc_main$8 = {};
-  function _sfc_render$7(_ctx, _cache) {
+  const _sfc_main$8 = {
+    data() {
+      return {
+        list: [
+          { icon: "../../../static/images/u689.svg", name: "全部分类" },
+          { icon: "../../../static/images/u692.svg", name: "对话小说" },
+          { icon: "../../../static/images/u695.svg", name: "简书FM" },
+          { icon: "../../../static/images/u698.svg", name: "开通连载" },
+          { icon: "../../../static/images/u702.svg", name: "连载书评" }
+        ],
+        columnList: [
+          { src: "../../../static/images/u680.jpg", name: "有一种光，叫拾荒", tip: "澜嫣" },
+          { src: "../../../static/images/u678.jpg", name: "妖异录之青冥", tip: "人海中的" },
+          { src: "../../../static/images/u679.jpg", name: "故事", tip: "海外敦煌" },
+          { src: "../../../static/images/u705.jpg", name: "生活碎碎念", tip: "唯唯心" },
+          { src: "../../../static/images/u706.jpg", name: "野笔燃心", tip: "crazy小" },
+          { src: "../../../static/images/u707.jpg", name: "人物杂谈", tip: "婉迁" },
+          { src: "../../../static/images/u730.jpg", name: "心灵驿站", tip: "高富帅暖" },
+          { src: "../../../static/images/u731.jpg", name: "那些花儿", tip: "初初a" },
+          { src: "../../../static/images/u732.jpg", name: "横滨之恋", tip: "杨岁尘" },
+          { src: "../../../static/images/u755.jpg", name: "风华正茂", tip: "杨岁尘" },
+          { src: "../../../static/images/u705.jpg", name: "一只鸡的365天", tip: "如如清" },
+          { src: "../../../static/images/u757.jpg", name: "安暖逸心", tip: "探索幸" },
+          { src: "../../../static/images/u705.jpg", name: "生活随笔", tip: "逸瑶" },
+          { src: "../../../static/images/u780.jpg", name: "天木世界", tip: "田木弓长" },
+          { src: "../../../static/images/u781.jpg", name: "小小文|笔尖说", tip: "Emilysmi" }
+        ]
+      };
+    },
+    methods: {
+      getUrl(url) {
+        return new URL(url, document.currentScript && document.currentScript.src || new URL("app-service.js", document.baseURI).href).href;
+      }
+    },
+    components: {}
+  };
+  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       vue.Fragment,
       null,
       [
-        vue.createCommentVNode(" 连载 "),
-        vue.createElementVNode("view", { class: "series" }, " 连载 ")
+        vue.createCommentVNode(" 专题页面 "),
+        vue.createCommentVNode(" 图标栏开始 "),
+        vue.createElementVNode("view", { class: "h-20 d-f justify-around bg-white" }, [
+          (vue.openBlock(true), vue.createElementBlock(
+            vue.Fragment,
+            null,
+            vue.renderList($data.list, (item, index) => {
+              return vue.openBlock(), vue.createElementBlock("view", {
+                class: "tools d-f flex-column align-center transform-y-30",
+                key: index
+              }, [
+                vue.createElementVNode("image", {
+                  class: "tools-icon",
+                  src: item.icon
+                }, null, 8, ["src"]),
+                vue.createElementVNode(
+                  "view",
+                  { class: "name transform-y-100" },
+                  vue.toDisplayString(item.name),
+                  1
+                  /* TEXT */
+                )
+              ]);
+            }),
+            128
+            /* KEYED_FRAGMENT */
+          ))
+        ]),
+        vue.createCommentVNode(" 图标栏结束 "),
+        vue.createCommentVNode(" 关注栏开始 "),
+        vue.createElementVNode("view", { class: "concern bg-white my-4 d-f align-center" }, [
+          vue.createElementVNode("image", {
+            class: "concern-icon m-3",
+            src: "/static/images/x2.png",
+            mode: ""
+          }),
+          vue.createElementVNode("view", { class: "title" }, "我关注的专题")
+        ]),
+        vue.createCommentVNode(" 关注栏结束 "),
+        vue.createCommentVNode(" 专题栏开始 "),
+        vue.createElementVNode("view", { class: "column d-f" }, [
+          (vue.openBlock(true), vue.createElementBlock(
+            vue.Fragment,
+            null,
+            vue.renderList($data.columnList, (column, index) => {
+              return vue.openBlock(), vue.createElementBlock("view", {
+                class: "column-son flex-column d-f",
+                key: index
+              }, [
+                vue.createElementVNode("image", {
+                  class: "column-cover w-100",
+                  src: column.src,
+                  mode: ""
+                }, null, 8, ["src"]),
+                vue.createElementVNode(
+                  "view",
+                  { class: "column-name w-100 font" },
+                  vue.toDisplayString(column.name),
+                  1
+                  /* TEXT */
+                ),
+                vue.createElementVNode(
+                  "view",
+                  { class: "column-tip w-100" },
+                  vue.toDisplayString(column.tip),
+                  1
+                  /* TEXT */
+                )
+              ]);
+            }),
+            128
+            /* KEYED_FRAGMENT */
+          ))
+        ]),
+        vue.createCommentVNode(" 专题栏结束 ")
       ],
-      2112
-      /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+      64
+      /* STABLE_FRAGMENT */
     );
   }
-  const series = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/series.vue"]]);
+  const series = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__scopeId", "data-v-7e4878cd"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/series.vue"]]);
   let platform = "other";
   const _sfc_main$7 = {
     name: "UniFab",
