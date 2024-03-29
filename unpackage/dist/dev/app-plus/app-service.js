@@ -1533,7 +1533,7 @@ if (uni.restoreGlobal) {
       null,
       [
         vue.createCommentVNode(" 推荐页 "),
-        vue.createElementVNode("view", { class: "recommend" }, [
+        vue.createElementVNode("view", { class: "bg-silver" }, [
           vue.createVNode(_component_list, null, {
             default: vue.withCtx(() => [
               (vue.openBlock(true), vue.createElementBlock(
@@ -1552,7 +1552,8 @@ if (uni.restoreGlobal) {
                           _component_uni_card,
                           {
                             shadow: "none",
-                            margin: "6rpx 0 10rpx 0",
+                            margin: "0 0 10rpx 0",
+                            "padding-top": "0",
                             border: "false"
                           },
                           {
@@ -1564,7 +1565,7 @@ if (uni.restoreGlobal) {
                                   default: vue.withCtx(() => [
                                     vue.createElementVNode(
                                       "text",
-                                      { class: "title" },
+                                      { class: "title px-2 py-2" },
                                       vue.toDisplayString(item.title),
                                       1
                                       /* TEXT */
@@ -1586,17 +1587,17 @@ if (uni.restoreGlobal) {
                                 slot: "actions",
                                 class: "card-actions"
                               }, [
-                                vue.createElementVNode("view", { class: "card-actions-item" }, [
+                                vue.createElementVNode("view", { class: "card-actions-item px-2" }, [
                                   vue.createElementVNode(
                                     "text",
-                                    { class: "card-actions-item-text" },
+                                    { class: "card-actions-item-text px-2" },
                                     vue.toDisplayString(item.id),
                                     1
                                     /* TEXT */
                                   ),
                                   vue.createElementVNode(
                                     "text",
-                                    { class: "card-actions-item-text" },
+                                    { class: "card-actions-item-text px-2" },
                                     vue.toDisplayString(item.data),
                                     1
                                     /* TEXT */
@@ -1708,33 +1709,33 @@ if (uni.restoreGlobal) {
       null,
       vue.renderList($data.list, (item, index) => {
         return vue.openBlock(), vue.createElementBlock("view", {
-          class: "shuoshuo",
+          class: "bg-white py-2 NaNrpx-4 mt-2",
           key: item.id
         }, [
-          vue.createElementVNode("view", { class: "card-user" }, [
+          vue.createElementVNode("view", { class: "card-user my-2 mx-0" }, [
             vue.createElementVNode("image", {
               class: "card-img",
               src: item.cover,
               mode: ""
             }, null, 8, ["src"]),
-            vue.createElementVNode("view", { class: "id" }, [
+            vue.createElementVNode("view", { class: "pl-2 d-f flex-column justify-center" }, [
               vue.createElementVNode(
                 "text",
-                { class: "name" },
+                { class: "fs-3 font-weight-bolder" },
                 vue.toDisplayString(item.name),
                 1
                 /* TEXT */
               ),
               vue.createElementVNode(
                 "text",
-                { class: "time" },
+                { class: "time h6" },
                 vue.toDisplayString(item.time),
                 1
                 /* TEXT */
               )
             ])
           ]),
-          vue.createElementVNode("view", { class: "data" }, [
+          vue.createElementVNode("view", { class: "data mt-4" }, [
             vue.createElementVNode(
               "text",
               { class: "data" },
@@ -1743,10 +1744,10 @@ if (uni.restoreGlobal) {
               /* TEXT */
             )
           ]),
-          vue.createElementVNode("view", { class: "topic" }, [
+          vue.createElementVNode("view", { class: "py-2 px-0" }, [
             vue.createElementVNode(
               "text",
-              { class: "topic-name" },
+              { class: "topic-name fs-3" },
               vue.toDisplayString(item.topicname),
               1
               /* TEXT */
@@ -1828,7 +1829,7 @@ if (uni.restoreGlobal) {
   };
   function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_shuoshuo = vue.resolveComponent("shuoshuo");
-    return vue.openBlock(), vue.createElementBlock("view", { class: "square" }, [
+    return vue.openBlock(), vue.createElementBlock("view", { class: "w-100" }, [
       vue.createCommentVNode(" 横向滚动条开始 "),
       vue.createElementVNode("scroll-view", {
         class: "squ-scroll",
@@ -1840,7 +1841,7 @@ if (uni.restoreGlobal) {
           null,
           vue.renderList($data.list, (item, index) => {
             return vue.openBlock(), vue.createElementBlock("view", {
-              class: "scroll-box",
+              class: "scroll-box bg-white flex-shrink",
               key: index
             }, [
               vue.createElementVNode("image", {
@@ -1849,7 +1850,7 @@ if (uni.restoreGlobal) {
               }, null, 8, ["src"]),
               vue.createElementVNode(
                 "text",
-                { class: "scroll-text" },
+                { class: "scroll-text d-block text-center" },
                 vue.toDisplayString(item.text),
                 1
                 /* TEXT */
@@ -1857,7 +1858,7 @@ if (uni.restoreGlobal) {
               vue.createElementVNode(
                 "text",
                 {
-                  class: "scroll-text",
+                  class: "scroll-text d-block text-center",
                   style: { "color": "#aaaabd" }
                 },
                 vue.toDisplayString(item.num) + "成员",
@@ -1865,7 +1866,7 @@ if (uni.restoreGlobal) {
                 /* TEXT */
               ),
               vue.createElementVNode("view", {
-                class: "button-group",
+                class: "button-group text-center",
                 onClick: ($event) => $options.join(index, item.flag),
                 style: vue.normalizeStyle({ color: _ctx.flag ? "#b2aab2" : "#2fc25b" })
               }, "＋加入", 12, ["onClick"])
@@ -2002,20 +2003,136 @@ if (uni.restoreGlobal) {
     );
   }
   const island = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__scopeId", "data-v-d249dff2"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/island.vue"]]);
-  const _sfc_main$9 = {};
-  function _sfc_render$8(_ctx, _cache) {
+  const _sfc_main$9 = {
+    data() {
+      return {
+        list: [
+          { icon: "../../../static/images/u551.jpg", name: "简友广场" },
+          { icon: "../../../static/images/u554.jpg", name: "热门专题" },
+          { icon: "../../../static/images/u557.jpg", name: "官方专题" },
+          { icon: "../../../static/images/u560.jpg", name: "投诉建议" },
+          { icon: "../../../static/images/u563.jpg", name: "工作招聘" }
+        ],
+        columnList: [
+          { src: "../../../static/images/u575.jpg", name: "齐帆齐联合谈写作专题征文", tip: "齐帆齐关注" },
+          { src: "../../../static/images/u576.jpg", name: "我与简书的故事", tip: "齐帆齐关注" },
+          { src: "../../../static/images/u577.jpg", name: "故事", tip: "简书推荐专题" },
+          { src: "../../../static/images/u544.jpg", name: "摄影", tip: "简书推荐专题" },
+          { src: "../../../static/images/u545.jpg", name: "婚姻育儿", tip: "简书推荐专题" },
+          { src: "../../../static/images/u548.jpg", name: "程序员", tip: "简书推荐专题" },
+          { src: "../../../static/images/u591.jpg", name: "旅行在路上", tip: "简书推荐专题" },
+          { src: "../../../static/images/u592.jpg", name: "短篇小说", tip: "简书推荐专题" },
+          { src: "../../../static/images/u593.jpg", name: "原创儿童文学", tip: "简书推荐专题" },
+          { src: "../../../static/images/u602.jpg", name: "手绘", tip: "简书推荐专题" },
+          { src: "../../../static/images/u603.jpg", name: "自然科普", tip: "简书推荐专题" },
+          { src: "../../../static/images/u595.jpg", name: "简书电影", tip: "简书推荐专题" },
+          { src: "../../../static/images/u611.jpg", name: "脱单", tip: "简书推荐专题" },
+          { src: "../../../static/images/u612.jpg", name: "国学与传统文化", tip: "简书推荐专题" },
+          { src: "../../../static/images/u613.jpg", name: "向茶点故事投稿", tip: "简书推荐专题" },
+          { src: "../../../static/images/u612.jpg", name: "连载小说", tip: "简书推荐专题" },
+          { src: "../../../static/images/u622.jpg", name: "诗", tip: "简书推荐专题" },
+          { src: "../../../static/images/u623.jpg", name: "漫画", tip: "简书推荐专题" },
+          { src: "../../../static/images/u632.jpg", name: "创业", tip: "简书推荐专题" },
+          { src: "../../../static/images/u633.jpg", name: "美食", tip: "简书推荐专题" },
+          { src: "../../../static/images/u625.jpg", name: "娱乐圈", tip: "简书推荐专题" },
+          { src: "../../../static/images/u639.jpg", name: "上班这点事", tip: "简书推荐专题" },
+          { src: "../../../static/images/u640.jpg", name: "生活家", tip: "简书推荐专题" }
+        ]
+      };
+    },
+    methods: {
+      getUrl(url) {
+        return new URL(url, document.currentScript && document.currentScript.src || new URL("app-service.js", document.baseURI).href).href;
+      }
+    },
+    components: {}
+  };
+  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       vue.Fragment,
       null,
       [
         vue.createCommentVNode(" 专题页面 "),
-        vue.createElementVNode("view", { class: "topic" }, " 专题 ")
+        vue.createCommentVNode(" 图标栏开始 "),
+        vue.createElementVNode("view", { class: "h-20 d-f justify-around bg-white" }, [
+          (vue.openBlock(true), vue.createElementBlock(
+            vue.Fragment,
+            null,
+            vue.renderList($data.list, (item, index) => {
+              return vue.openBlock(), vue.createElementBlock("view", {
+                class: "tools d-f flex-column align-center transform-y-30",
+                key: index
+              }, [
+                vue.createElementVNode("image", {
+                  class: "tools-icon",
+                  src: item.icon
+                }, null, 8, ["src"]),
+                vue.createElementVNode(
+                  "view",
+                  { class: "name transform-y-100" },
+                  vue.toDisplayString(item.name),
+                  1
+                  /* TEXT */
+                )
+              ]);
+            }),
+            128
+            /* KEYED_FRAGMENT */
+          ))
+        ]),
+        vue.createCommentVNode(" 图标栏结束 "),
+        vue.createCommentVNode(" 关注栏开始 "),
+        vue.createElementVNode("view", { class: "concern bg-white my-4 d-f align-center" }, [
+          vue.createElementVNode("image", {
+            class: "concern-icon m-3",
+            src: "/static/images/x1.png",
+            mode: ""
+          }),
+          vue.createElementVNode("view", { class: "title" }, "我关注的专题")
+        ]),
+        vue.createCommentVNode(" 关注栏结束 "),
+        vue.createCommentVNode(" 专题栏开始 "),
+        vue.createElementVNode("view", { class: "column d-f" }, [
+          (vue.openBlock(true), vue.createElementBlock(
+            vue.Fragment,
+            null,
+            vue.renderList($data.columnList, (column, index) => {
+              return vue.openBlock(), vue.createElementBlock("view", {
+                class: "column-son flex-column d-f",
+                key: index
+              }, [
+                vue.createElementVNode("image", {
+                  class: "column-cover w-100",
+                  src: column.src,
+                  mode: ""
+                }, null, 8, ["src"]),
+                vue.createElementVNode(
+                  "view",
+                  { class: "column-name w-100 font" },
+                  vue.toDisplayString(column.name),
+                  1
+                  /* TEXT */
+                ),
+                vue.createElementVNode(
+                  "view",
+                  { class: "column-tip w-100" },
+                  vue.toDisplayString(column.tip),
+                  1
+                  /* TEXT */
+                )
+              ]);
+            }),
+            128
+            /* KEYED_FRAGMENT */
+          ))
+        ]),
+        vue.createCommentVNode(" 专题栏结束 ")
       ],
-      2112
-      /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+      64
+      /* STABLE_FRAGMENT */
     );
   }
-  const topic = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/topic.vue"]]);
+  const topic = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__scopeId", "data-v-67877be5"], ["__file", "C:/Users/DRIVESAFE/Desktop/jianshu-app/pages/index/components/topic.vue"]]);
   const _sfc_main$8 = {};
   function _sfc_render$7(_ctx, _cache) {
     return vue.openBlock(), vue.createElementBlock(
@@ -2365,9 +2482,9 @@ if (uni.restoreGlobal) {
       ),
       vue.createCommentVNode(" 状态栏结束 "),
       vue.createCommentVNode(" 搜索开始 "),
-      vue.createElementVNode("view", { class: "search" }, [
+      vue.createElementVNode("view", { class: "bg-white" }, [
         vue.createVNode(_component_uni_search_bar, {
-          class: "uni-mt-10",
+          class: "uni-mt-10 justify-center",
           radius: "100",
           placeholder: "搜索感兴趣的内容",
           clearButton: "none",
@@ -2378,7 +2495,7 @@ if (uni.restoreGlobal) {
       vue.createCommentVNode(" 搜索结束 "),
       vue.createCommentVNode(" 选项卡开始 "),
       vue.createCommentVNode(" 内容切换 "),
-      vue.createElementVNode("view", { class: "head-nav" }, [
+      vue.createElementVNode("view", { class: "head-nav bg-white d-f justify-evenly align-end" }, [
         vue.createElementVNode(
           "view",
           {
@@ -2426,7 +2543,7 @@ if (uni.restoreGlobal) {
         {
           key: 0,
           class: "content",
-          style: vue.normalizeStyle({ top: $data.statusBarHeight + 94.61 + "px" })
+          style: vue.normalizeStyle({ top: $data.statusBarHeight + 88 + "px" })
         },
         [
           vue.createVNode(_component_recommend),
@@ -2441,7 +2558,7 @@ if (uni.restoreGlobal) {
         {
           key: 1,
           class: "content",
-          style: vue.normalizeStyle({ top: $data.statusBarHeight + 94.61 + "px" })
+          style: vue.normalizeStyle({ top: $data.statusBarHeight + 88 + "px" })
         },
         [
           vue.createVNode(_component_island)
@@ -2455,7 +2572,7 @@ if (uni.restoreGlobal) {
         {
           key: 2,
           class: "content",
-          style: vue.normalizeStyle({ top: $data.statusBarHeight + 94.61 + "px" })
+          style: vue.normalizeStyle({ top: $data.statusBarHeight + 88 + "px" })
         },
         [
           vue.createVNode(_component_topic)
@@ -2469,7 +2586,7 @@ if (uni.restoreGlobal) {
         {
           key: 3,
           class: "content",
-          style: vue.normalizeStyle({ top: $data.statusBarHeight + 94.61 + "px" })
+          style: vue.normalizeStyle({ top: $data.statusBarHeight + 88 + "px" })
         },
         [
           vue.createVNode(_component_series)

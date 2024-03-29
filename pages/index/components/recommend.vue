@@ -4,7 +4,7 @@
 		<list>
 			<cell v-for="(item, index) in dataList" :key="item.id">
 				<!-- 卡片开始 -->
-				<uni-card shadow="none" margin="0 0 10rpx 0" border="false">
+				<uni-card shadow="none" margin="0 0 10rpx 0" padding-top="0" border="false">
 					<!-- 标题 -->
 					<template v-slot:title>
 						<uni-list>

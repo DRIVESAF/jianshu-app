@@ -785,9 +785,6 @@
   text-overflow: ellipsis;
 }
 
-body[data-v-81bb5221] {
-	background-color: #f2f2f2;
-}
 uni-image[data-v-81bb5221] {
 	width: 100%;
 	height: 6.25rem;
@@ -796,61 +793,33 @@ uni-image[data-v-81bb5221] {
 .title[data-v-81bb5221] {
 	color: #333333;
 	font-size: 1rem;
-	padding: 0.625rem 0.625rem;
 	line-height: 1.5625rem;
 }
 /* 热度 */
 .card-actions-item-text[data-v-81bb5221] {
-	padding: 0 0.625rem;
 	font-size: 0.75rem;
 }
 
 
-.shuoshuo[data-v-483daba0] {
-	background-color: #fff;
-	margin-top: 0.625rem;
-	padding: 0.625rem 1.25rem;
-}
 .card-user[data-v-483daba0] {
-	margin: 0.625rem 0;
 	display: flex;
 }
 .card-img[data-v-483daba0] {
 	height: 2.5rem;
 	width: 2.5rem;
-	border-radius: 50%;
-}
-.id[data-v-483daba0] {
-	padding-left: 0.625rem;
-	display: inline-block;
-	flex-wrap: wrap;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.name[data-v-483daba0] {
-	font-size: 0.9375rem;
-	font-weight: bold;
 }
 .time[data-v-483daba0] {
-	font-size: 0.8125rem;
 	color: #aaaaaa;
 }
 .data[data-v-483daba0] {
 	height: 100%;
-	margin-top: 1.25rem;
 }
 [data-v-483daba0] .uni-icons {
 	font-size: 1.03125rem !important;
 	float: right;
 	margin: 0 0.125rem;
 }
-.topic[data-v-483daba0] {
-	padding: 0.625rem 0;
-}
 .topic-name[data-v-483daba0] {
-	font-size: 0.9375rem;
 	color: #aaaaaa;
 }
 
@@ -879,40 +848,32 @@ uni-image[data-v-81bb5221] {
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.square[data-v-279cb742] {
-  width: 100%;
-}
 [data-v-279cb742] .uni-scroll-view-content {
   display: flex !important;
 }
 .scroll-box[data-v-279cb742] {
-  background-color: #fff;
-  flex-shrink: 0;
   width: 32%;
-  height: 11.875rem;
+  height: 12.5rem;
   padding-right: 0.46875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4375rem;
 }
 .scroll-img[data-v-279cb742] {
   width: 100%;
-  height: 50%;
+  height: 45%;
   float: left;
-}
-.scroll-text[data-v-279cb742] {
-  text-align: center;
-  display: block;
-  padding: 0.125rem;
 }
 uni-image[data-v-279cb742] {
   display: inline;
   opacity: inherit;
   height: auto;
   width: auto;
-  padding-bottom: 0.625rem;
 }
 .button-group[data-v-279cb742] {
   border: 0.09375rem solid;
   width: 60%;
-  text-align: center;
   border-radius: 1rem;
   margin: 0.21875rem auto;
 }
@@ -961,7 +922,7 @@ uni-image[data-v-d249dff2] {
 .text[data-v-d249dff2] {
   font-size: 0.8125rem;
   float: left;
-  margin: 1.25rem 0 0 0.625rem;
+  margin: 0.78125rem 0 0 0.625rem;
   padding: 0 0.9375rem;
   border-left: 0.0625rem solid #e1e1e1;
 }
@@ -984,6 +945,48 @@ uni-image[data-v-d249dff2] {
 .box[data-v-d249dff2] {
   background: #008000;
 }
+
+.tools[data-v-67877be5] {
+	height: 3.8125rem;
+	width: 100%;
+}
+.tools-icon[data-v-67877be5] {
+	width: 1.875rem;
+	height: 2.1875rem;
+}
+.name[data-v-67877be5] {
+	font-size: 0.8125rem;
+}
+.concern[data-v-67877be5] {
+	height: 2.5rem;
+}
+.concern-icon[data-v-67877be5] {
+	width: 1.6875rem;
+	height: 1.6875rem;
+}
+.title[data-v-67877be5] {
+	font-size: 0.9375rem;
+}
+.column[data-v-67877be5] {
+	padding: 0.9375rem;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+	background: #fff;
+}
+.column-son[data-v-67877be5] {
+	width: 6.25rem;
+	height: 11.25rem;
+	justify-content: space-between;
+}
+.column-cover[data-v-67877be5] {
+	height: 60%;
+}
+.column-tip[data-v-67877be5] {
+	height: 1.25rem;
+	font-size: 0.75rem;
+	color: #aaaaaa;
+}
+
 /**
  * 这里是uni-app内置的常用样式变量
  *
@@ -1157,27 +1160,7 @@ uni-image[data-v-d249dff2] {
 /* 悬浮按钮结束 */
 
 
-.content {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	overflow-y: auto;
-}
-
-/* 状态栏开始 */
-.condition {
-	background-color: #ffffff;
-}
-/* 状态栏结束 */
-
 /* 搜索框开始 */
-.search {
-	background-color: #ffffff;
-}
- .uni-searchbar {
-	justify-content: center;
-}
  .uni-searchbar__box {
 	justify-content: center !important;
 	width: 80%;
@@ -1187,14 +1170,7 @@ uni-image[data-v-d249dff2] {
 
 /* 选项卡开始 */
 .head-nav {
-	width: 100%;
-	padding: 1.25rem auto;
-	height: 2.5rem;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: flex-end;
 	color: #aaaabd;
-	background-color: #ffffff;
 }
 .activite {
 	color: #333333;
@@ -1202,8 +1178,5 @@ uni-image[data-v-d249dff2] {
 }
 .head-nav > uni-view {
 	padding-bottom: 0.78125rem;
-}
-.box {
-	background: #008000;
 }
 /* 选项卡结束 */

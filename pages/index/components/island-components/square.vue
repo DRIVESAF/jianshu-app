@@ -5,15 +5,15 @@
 			<!-- 卡片开始 -->
 			<view class="scroll-box bg-white flex-shrink" v-for="(item, index) in list" :key="index">
 				// #ifdef MP-WEIXIN
-				<image class="scroll-img pb-2" :src="item.src"></image>
+				<image class="scroll-img" :src="item.src"></image>
 				// #endif // #ifdef H5
-				<image class="scroll-img pb-2" :src="getUrl(item.src)"></image>
+				<image class="scroll-img" :src="getUrl(item.src)"></image>
 				// #endif // #ifdef APP-PLUS
-				<image class="scroll-img pb-2" :src="item.src"></image>
+				<image class="scroll-img" :src="item.src"></image>
 				// #endif
 
-				<text class="scroll-text d-block p text-center">{{ item.text }}</text>
-				<text class="scroll-text d-block p text-center" style="color: #aaaabd">{{ item.num }}成员</text>
+				<text class="scroll-text d-block text-center">{{ item.text }}</text>
+				<text class="scroll-text d-block text-center" style="color: #aaaabd">{{ item.num }}成员</text>
 				<view class="button-group text-center" @click="join(index, item.flag)" :style="{ color: flag ? '#b2aab2' : '#2fc25b' }">＋加入</view>
 			</view>
 			<!-- 卡片结束 -->
@@ -70,12 +70,16 @@ export default {
 }
 .scroll-box {
 	width: 32%;
-	height: 380rpx;
+	height: 400rpx;
 	padding-right: 15rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 14rpx;
 }
 .scroll-img {
 	width: 100%;
-	height: 50%;
+	height: 45%;
 	float: left;
 }
 

@@ -19,22 +19,47 @@
 			<view :class="navIndex == 4 ? 'activite' : ''" @click="checkIndex(4)">连载</view>
 		</view>
 		<!-- 推荐页 -->
-		<view class="content" :style="{ top: statusBarHeight + 94.61 + 'px' }" v-if="navIndex == 1">
+		// #ifdef APP-PLUS
+		<view class="content" :style="{ top: statusBarHeight + 88 + 'px' }" v-if="navIndex == 1">
 			<recommend></recommend>
 			<ball></ball>
 		</view>
+		// #endif // #ifdef H5
+		<view class="content" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 1">
+			<recommend></recommend>
+			<ball></ball>
+		</view>
+		// #endif
 		<!-- 小岛页 -->
-		<view class="content" :style="{ top: statusBarHeight + 94.61 + 'px' }" v-if="navIndex == 2">
+		// #ifdef APP-PLUS
+		<view class="content" :style="{ top: statusBarHeight + 88 + 'px' }" v-if="navIndex == 2">
 			<island></island>
 		</view>
+		// #endif // #ifdef H5
+		<view class="content" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 2">
+			<island></island>
+		</view>
+		// #endif
 		<!-- 专题页 -->
-		<view class="content" :style="{ top: statusBarHeight + 94.61 + 'px' }" v-if="navIndex == 3">
+		// #ifdef APP-PLUS
+		<view class="content" :style="{ top: statusBarHeight + 88 + 'px' }" v-if="navIndex == 3">
 			<topic></topic>
 		</view>
+		// #endif // #ifdef H5
+		<view class="content" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 3">
+			<topic></topic>
+		</view>
+		// #endif
 		<!-- 连载页 -->
-		<view class="content" :style="{ top: statusBarHeight + 94.61 + 'px' }" v-if="navIndex == 4">
+		// #ifdef APP-PLUS
+		<view class="content" :style="{ top: statusBarHeight + 88 + 'px' }" v-if="navIndex == 4">
 			<series></series>
 		</view>
+		// #endif // #ifdef H5
+		<view class="content" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 4">
+			<series></series>
+		</view>
+		// #endif
 
 		<!-- 选项卡结束 -->
 	</view>
