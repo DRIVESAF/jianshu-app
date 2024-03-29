@@ -1,5 +1,5 @@
 <template>
-	<view class="bg-white py-2 px-4 mt-2" v-for="(item, index) in list" :key="item.id">
+	<view class="bg-white py-2 NaNrpx-4 mt-2" v-for="(item, index) in list" :key="item.id">
 		<view class="card-user my-2 mx-0">
 			// #ifdef APP-PLUS
 			<image class="card-img" :src="item.cover" mode=""></image>
