@@ -5,14 +5,14 @@
 		<!-- 状态栏结束 -->
 
 		<!-- 搜索开始 -->
-		<view class="search">
-			<uni-search-bar class="uni-mt-10" radius="100" placeholder="搜索感兴趣的内容" clearButton="none" cancelButton="none" @confirm="search" />
+		<view class="bg-white">
+			<uni-search-bar class="uni-mt-10 justify-center" radius="100" placeholder="搜索感兴趣的内容" clearButton="none" cancelButton="none" @confirm="search" />
 		</view>
 		<!-- 搜索结束 -->
 
 		<!-- 选项卡开始 -->
 		<!-- 内容切换 -->
-		<view class="head-nav">
+		<view class="head-nav bg-white d-f justify-evenly align-end">
 			<view :class="navIndex == 1 ? 'activite' : ''" @click="checkIndex(1)">推荐</view>
 			<view :class="navIndex == 2 ? 'activite' : ''" @click="checkIndex(2)">小岛</view>
 			<view :class="navIndex == 3 ? 'activite' : ''" @click="checkIndex(3)">专题</view>
@@ -76,27 +76,7 @@ export default {
 </script>
 
 <style>
-.content {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	overflow-y: auto;
-}
-
-/* 状态栏开始 */
-.condition {
-	background-color: #ffffff;
-}
-/* 状态栏结束 */
-
 /* 搜索框开始 */
-.search {
-	background-color: #ffffff;
-}
-:deep(.uni-searchbar) {
-	justify-content: center;
-}
 :deep(.uni-searchbar__box) {
 	justify-content: center !important;
 	width: 80%;
@@ -106,14 +86,7 @@ export default {
 
 /* 选项卡开始 */
 .head-nav {
-	width: 100%;
-	padding: 40rpx auto;
-	height: 80rpx;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: flex-end;
 	color: #aaaabd;
-	background-color: #ffffff;
 }
 .activite {
 	color: #333333;
@@ -121,9 +94,6 @@ export default {
 }
 .head-nav > view {
 	padding-bottom: 25rpx;
-}
-.box {
-	background: #008000;
 }
 /* 选项卡结束 */
 </style>

@@ -49,9 +49,3 @@
 	background: #008000;
 }
 /* 选项卡结束 */
-
-/* 悬浮按钮开始 */
- .uni-fab__content--other-platform {
-	box-shadow: none !important;
-}
-/* 悬浮按钮结束 */

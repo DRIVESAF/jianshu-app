@@ -1,0 +1,1 @@
+<view><uni-fab wx:if="{{c}}" bindtrigger="{{a}}" bindfabClick="{{b}}" u-i="1fea9cce-0" bind:__l="__l" u-p="{{c}}"/></view>

@@ -11,9 +11,10 @@
 .card-img {
 	height: 80rpx;
 	width: 80rpx;
-	padding-right: 40rpx;
+	border-radius: 50%;
 }
 .id {
+	padding-left: 20rpx;
 	display: inline-block;
 	flex-wrap: wrap;
 	display: flex;
@@ -29,14 +30,19 @@
 	font-size: 26rpx;
 	color: #aaaaaa;
 }
-.content {
+.data {
 	height: 100%;
 	margin-top: 40rpx;
-	display: flex;
+}
+ .uni-icons {
+	font-size: 33rpx !important;
+	float: right;
+	margin: 0 4rpx;
 }
 .topic {
-	height: 100%;
-	margin-top: 40rpx;
-	background-color: #aaaaaa;
-	display: flex;
+	padding: 20rpx 0;
+}
+.topic-name {
+	font-size: 30rpx;
+	color: #aaaaaa;
 }

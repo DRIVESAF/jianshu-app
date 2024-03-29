@@ -1,23 +1,23 @@
 <template>
-	<view class="shuoshuo" v-for="(item, index) in list" :key="item.id">
-		<view class="card-user">
+	<view class="bg-white py-2 px-4 mt-2" v-for="(item, index) in list" :key="item.id">
+		<view class="card-user my-2 mx-0">
 			// #ifdef APP-PLUS
 			<image class="card-img" :src="item.cover" mode=""></image>
 			// #endif // #ifdef H5
-			<image class="card-img" :src="getUrl(item.cover)" mode=""></image>
+			<image class="card-img br-5" :src="getUrl(item.cover)" mode=""></image>
 			// #endif
-			<view class="id">
-				<text class="name">{{ item.name }}</text>
-				<text class="time">{{ item.time }}</text>
+			<view class="pl-2 d-f flex-column justify-center">
+				<text class="fs-3 font-weight-bolder">{{ item.name }}</text>
+				<text class="time h6">{{ item.time }}</text>
 			</view>
 		</view>
-		<view class="data">
+		<view class="data mt-4">
 			<text class="data">
 				{{ item.content }}
 			</text>
 		</view>
-		<view class="topic">
-			<text class="topic-name">{{ item.topicname }}</text>
+		<view class="py-2 px-0">
+			<text class="topic-name fs-3">{{ item.topicname }}</text>
 			<uni-icons type="hand-up">{{ item.zan }}</uni-icons>
 			<uni-icons type="chat">{{ item.common }}</uni-icons>
 		</view>
@@ -97,42 +97,18 @@ export default {
 </script>
 
 <style>
-.shuoshuo {
-	background-color: #fff;
-	margin-top: 20rpx;
-	padding: 20rpx 40rpx;
-}
 .card-user {
-	margin: 20rpx 0;
 	display: flex;
 }
 .card-img {
 	height: 80rpx;
 	width: 80rpx;
-	border-radius: 50%;
 }
-.id {
-	padding-left: 20rpx;
-	display: inline-block;
-	flex-wrap: wrap;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.name {
-	font-size: 30rpx;
-	font-weight: bold;
-}
-
 .time {
-	font-size: 26rpx;
 	color: #aaaaaa;
 }
 .data {
 	height: 100%;
-	margin-top: 40rpx;
 }
 
 :deep(.uni-icons) {
@@ -141,12 +117,7 @@ export default {
 	margin: 0 4rpx;
 }
 
-.topic {
-	padding: 20rpx 0;
-}
-
 .topic-name {
-	font-size: 30rpx;
 	color: #aaaaaa;
 }
 </style>

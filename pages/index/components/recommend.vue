@@ -1,14 +1,14 @@
 <template>
 	<!-- 推荐页 -->
-	<view class="recommend">
+	<view class="bg-silver">
 		<list>
 			<cell v-for="(item, index) in dataList" :key="item.id">
 				<!-- 卡片开始 -->
-				<uni-card shadow="none" margin="6rpx 0 10rpx 0" border="false">
+				<uni-card shadow="none" margin="0 0 10rpx 0" border="false">
 					<!-- 标题 -->
 					<template v-slot:title>
 						<uni-list>
-							<text class="title">{{ item.title }}</text>
+							<text class="title px-2 py-2">{{ item.title }}</text>
 						</uni-list>
 					</template>
 					<!-- 图片 -->
@@ -21,9 +21,9 @@
 					// #endif
 					<!-- 热度 -->
 					<view slot="actions" class="card-actions">
-						<view class="card-actions-item">
-							<text class="card-actions-item-text">{{ item.id }}</text>
-							<text class="card-actions-item-text">{{ item.data }}</text>
+						<view class="card-actions-item px-2">
+							<text class="card-actions-item-text px-2">{{ item.id }}</text>
+							<text class="card-actions-item-text px-2">{{ item.data }}</text>
 						</view>
 					</view>
 				</uni-card>
@@ -57,10 +57,6 @@ export default {
 </script>
 
 <style>
-body {
-	background-color: #f2f2f2;
-}
-
 image {
 	width: 100%;
 	height: 200rpx;
@@ -69,12 +65,10 @@ image {
 .title {
 	color: #333333;
 	font-size: 32rpx;
-	padding: 20rpx 20rpx;
 	line-height: 50rpx;
 }
 /* 热度 */
 .card-actions-item-text {
-	padding: 0 20rpx;
 	font-size: 24rpx;
 }
 </style>

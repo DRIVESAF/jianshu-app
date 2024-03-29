@@ -1,20 +1,20 @@
 <template>
-	<view class="square">
+	<view class="w-100">
 		<!-- 横向滚动条开始 -->
 		<scroll-view class="squ-scroll" scroll-x="ture">
 			<!-- 卡片开始 -->
-			<view class="scroll-box" v-for="(item, index) in list" :key="index">
+			<view class="scroll-box bg-white flex-shrink" v-for="(item, index) in list" :key="index">
 				// #ifdef MP-WEIXIN
-				<image class="scroll-img" :src="item.src"></image>
+				<image class="scroll-img pb-2" :src="item.src"></image>
 				// #endif // #ifdef H5
-				<image class="scroll-img" :src="getUrl(item.src)"></image>
+				<image class="scroll-img pb-2" :src="getUrl(item.src)"></image>
 				// #endif // #ifdef APP-PLUS
-				<image class="scroll-img" :src="item.src"></image>
+				<image class="scroll-img pb-2" :src="item.src"></image>
 				// #endif
 
-				<text class="scroll-text">{{ item.text }}</text>
-				<text class="scroll-text" style="color: #aaaabd">{{ item.num }}成员</text>
-				<view class="button-group" @click="join(index, item.flag)" :style="{ color: flag ? '#b2aab2' : '#2fc25b' }">＋加入</view>
+				<text class="scroll-text d-block p text-center">{{ item.text }}</text>
+				<text class="scroll-text d-block p text-center" style="color: #aaaabd">{{ item.num }}成员</text>
+				<view class="button-group text-center" @click="join(index, item.flag)" :style="{ color: flag ? '#b2aab2' : '#2fc25b' }">＋加入</view>
 			</view>
 			<!-- 卡片结束 -->
 		</scroll-view>
@@ -65,15 +65,10 @@ export default {
 </script>
 
 <style lang="scss">
-.square {
-	width: 100%;
-}
 :deep(.uni-scroll-view-content) {
 	display: flex !important;
 }
 .scroll-box {
-	background-color: #fff;
-	flex-shrink: 0;
 	width: 32%;
 	height: 380rpx;
 	padding-right: 15rpx;
@@ -84,24 +79,16 @@ export default {
 	float: left;
 }
 
-.scroll-text {
-	text-align: center;
-	display: block;
-	padding: 4rpx;
-}
-
 image {
 	display: inline;
 	opacity: inherit;
 	height: auto;
 	width: auto;
-	padding-bottom: 20rpx;
 }
 
 .button-group {
 	border: 3rpx solid;
 	width: 60%;
-	text-align: center;
 	border-radius: 32rpx;
 	margin: 7rpx auto;
 }

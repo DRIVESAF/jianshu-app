@@ -4,7 +4,7 @@
     "island": "./components/island",
     "topic": "./components/topic",
     "series": "./components/series",
-    "uni-search-bar": "../../node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar",
-    "uni-fab": "../../uni_modules/uni-fab/components/uni-fab/uni-fab"
+    "ball": "./components/island-components/ball",
+    "uni-search-bar": "../../node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar"
   }
 }
