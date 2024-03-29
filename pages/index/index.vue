@@ -1,7 +1,7 @@
 <template>
 	<view class="index">
 		<!-- 状态栏开始 -->
-		<view :style="{ height: statusBarHeight + 'px' }" class="condition"></view>
+		<view :style="{ height: statusBarHeight + 'px' }" class="condition bg-white"></view>
 		<!-- 状态栏结束 -->
 
 		<!-- 搜索开始 -->
@@ -25,7 +25,7 @@
 			<ball></ball>
 		</view>
 		// #endif // #ifdef H5
-		<view class="content" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 1">
+		<view class="content2" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 1">
 			<recommend></recommend>
 			<ball></ball>
 		</view>
@@ -36,7 +36,7 @@
 			<island></island>
 		</view>
 		// #endif // #ifdef H5
-		<view class="content" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 2">
+		<view class="content2" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 2">
 			<island></island>
 		</view>
 		// #endif
@@ -46,7 +46,7 @@
 			<topic></topic>
 		</view>
 		// #endif // #ifdef H5
-		<view class="content" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 3">
+		<view class="content2" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 3">
 			<topic></topic>
 		</view>
 		// #endif
@@ -56,7 +56,7 @@
 			<series></series>
 		</view>
 		// #endif // #ifdef H5
-		<view class="content" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 4">
+		<view class="content2" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 4">
 			<series></series>
 		</view>
 		// #endif

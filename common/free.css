@@ -20,6 +20,14 @@
 	overflow-y: auto;
 }
 
+.content2 {
+	position: fixed;
+	bottom: 100rpx;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+}
+
 /* 图标 */
 .iconfont {
 	font-family: iconfont;

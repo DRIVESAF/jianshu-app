@@ -1797,6 +1797,7 @@ if (uni.restoreGlobal) {
   const _sfc_main$c = {
     data() {
       return {
+        j: false,
         list: [
           { src: "../../../../static/images/u56.jpg", text: "我们爱画画", num: "306", flag: "false" },
           { src: "../../../../static/images/u62.jpg", text: "彦姐书的…", num: "550", flag: "false" },
@@ -1814,10 +1815,8 @@ if (uni.restoreGlobal) {
       };
     },
     methods: {
-      join(index, flag) {
-        this.flag = !this.flag;
-        formatAppLog("log", "at pages/index/components/island-components/square.vue:54", this.flag);
-        formatAppLog("log", "at pages/index/components/island-components/square.vue:55", index);
+      join() {
+        this.j = !this.j;
       },
       getUrl(url) {
         return new URL(url, document.currentScript && document.currentScript.src || new URL("app-service.js", document.baseURI).href).href;
@@ -1865,11 +1864,17 @@ if (uni.restoreGlobal) {
                 1
                 /* TEXT */
               ),
-              vue.createElementVNode("view", {
-                class: "button-group text-center",
-                onClick: ($event) => $options.join(index, item.flag),
-                style: vue.normalizeStyle({ color: _ctx.flag ? "#b2aab2" : "#2fc25b" })
-              }, "＋加入", 12, ["onClick"])
+              vue.createElementVNode(
+                "view",
+                {
+                  class: "button-group text-center",
+                  onClick: _cache[0] || (_cache[0] = ($event) => $options.join()),
+                  style: vue.normalizeStyle({ color: $data.j ? "#b2aab2" : "#2fc25b" })
+                },
+                "＋加入",
+                4
+                /* STYLE */
+              )
             ]);
           }),
           128
@@ -2582,7 +2587,7 @@ if (uni.restoreGlobal) {
         "view",
         {
           style: vue.normalizeStyle({ height: $data.statusBarHeight + "px" }),
-          class: "condition"
+          class: "condition bg-white"
         },
         null,
         4
