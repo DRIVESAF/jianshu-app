@@ -28,9 +28,11 @@
 	<!-- 内容切换 -->
 	<view class="son-content" v-if="navIndex == 1">
 		<square></square>
+		<end></end>
 	</view>
 	<view class="son-content" v-if="navIndex == 2">
 		<mine></mine>
+		<end></end>
 	</view>
 	<!-- 子选项卡结束 -->
 </template>
@@ -38,6 +40,7 @@
 <script>
 import square from './island-components/square.vue';
 import mine from './island-components/mine.vue';
+import end from './end.vue';
 
 export default {
 	data() {
@@ -65,7 +68,8 @@ export default {
 	},
 	components: {
 		square,
-		mine
+		mine,
+		end
 	}
 };
 </script>

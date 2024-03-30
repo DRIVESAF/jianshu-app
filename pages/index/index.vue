@@ -23,11 +23,13 @@
 		<view class="content" :style="{ top: statusBarHeight + 88 + 'px' }" v-if="navIndex == 1">
 			<recommend></recommend>
 			<ball></ball>
+			<end></end>
 		</view>
 		// #endif // #ifdef H5
 		<view class="content2" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 1">
 			<recommend></recommend>
 			<ball></ball>
+			<end></end>
 		</view>
 		// #endif
 		<!-- 小岛页 -->
@@ -44,20 +46,24 @@
 		// #ifdef APP-PLUS
 		<view class="content" :style="{ top: statusBarHeight + 88 + 'px' }" v-if="navIndex == 3">
 			<topic></topic>
+			<end></end>
 		</view>
 		// #endif // #ifdef H5
 		<view class="content2" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 3">
 			<topic></topic>
+			<end></end>
 		</view>
 		// #endif
 		<!-- 连载页 -->
 		// #ifdef APP-PLUS
 		<view class="content" :style="{ top: statusBarHeight + 88 + 'px' }" v-if="navIndex == 4">
 			<series></series>
+			<end></end>
 		</view>
 		// #endif // #ifdef H5
 		<view class="content2" :style="{ top: statusBarHeight + 94 + 'px' }" v-if="navIndex == 4">
 			<series></series>
+			<end></end>
 		</view>
 		// #endif
 
@@ -71,6 +77,7 @@ import island from './components/island.vue';
 import topic from './components/topic.vue';
 import series from './components/series.vue';
 import ball from './components/island-components/ball.vue';
+import end from './components/end.vue';
 
 export default {
 	data() {
@@ -89,7 +96,8 @@ export default {
 		island,
 		topic,
 		series,
-		ball
+		ball,
+		end
 	},
 	created() {
 		// 获取手机系统信息

@@ -1267,6 +1267,10 @@
 	transform: translateY(100%);
 }
 
+.transform-y-50 {
+	transform: translateY(50%);
+}
+
 .transform-y-30 {
 	transform: translateY(30%);
 }
