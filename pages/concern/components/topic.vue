@@ -56,7 +56,6 @@ export default {
 	height: 140rpx;
 	width: 100%;
 	margin: 0 40rpx;
-
 	display: flex;
 }
 
@@ -75,7 +74,6 @@ export default {
 .item-title {
 	height: 70rpx;
 	width: 100%;
-
 	display: flex;
 }
 
