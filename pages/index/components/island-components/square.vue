@@ -14,7 +14,7 @@
 
 				<text class="scroll-text d-block text-center">{{ item.text }}</text>
 				<text class="scroll-text d-block text-center" style="color: #aaaabd">{{ item.num }}成员</text>
-				<view class="button-group text-center" @click="join(index)" :style="{ color: flag ? '#b2aab2' : '#2fc25b' }">＋加入</view>
+				<view class="button-group text-center" @click="join()" :style="{ color: j ? '#b2aab2' : '#2fc25b' }">＋加入</view>
 			</view>
 			<!-- 卡片结束 -->
 		</scroll-view>
@@ -32,6 +32,7 @@ import shuoshuo from './shuoshuo.vue';
 export default {
 	data() {
 		return {
+			j: false,
 			list: [
 				{ src: '../../../../static/images/u56.jpg', text: '我们爱画画', num: '306', flag: false },
 				{ src: '../../../../static/images/u62.jpg', text: '彦姐书的…', num: '550', flag: false },
@@ -49,8 +50,8 @@ export default {
 		};
 	},
 	methods: {
-		join(index) {
-			this.list[index].flag = true;
+		join() {
+			this.j = !this.j;
 		},
 		getUrl(url) {
 			return new URL(url, import.meta.url).href;

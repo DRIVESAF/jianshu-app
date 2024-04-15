@@ -1,0 +1,47 @@
+
+.topic {
+	height: 600px;
+	background-color: #ffffff;
+}
+.item {
+	height: 220rpx;
+	width: 100%;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+}
+.item-content {
+	height: 140rpx;
+	width: 100%;
+	margin: 0 40rpx;
+	display: flex;
+	align-items: center;
+}
+.item-img {
+	height: 190rpx;
+	width: 140rpx;
+	flex-shrink: 0;
+}
+.item-text {
+	margin: 0 20rpx;
+	height: 140rpx;
+	width: 100%;
+}
+.item-title {
+	width: 100%;
+	display: flex;
+}
+.item-des {
+	height: 70rpx;
+	width: 100%;
+}
+.item-user {
+	display: flex;
+	gap: 24rpx;
+	padding: 6rpx 0;
+}
+.item-icon {
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 50%;
+}

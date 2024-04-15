@@ -43,7 +43,7 @@ image {
 .text {
   font-size: 26rpx;
   float: left;
-  margin: 40rpx 0 0 20rpx;
+  margin: 25rpx 0 0 20rpx;
   padding: 0 30rpx;
   border-left: 2rpx solid #e1e1e1;
 }

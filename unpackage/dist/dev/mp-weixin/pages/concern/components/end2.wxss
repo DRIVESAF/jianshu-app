@@ -1,0 +1,8 @@
+
+.item-end {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500rpx;
+	background-color: #ffffff;
+}

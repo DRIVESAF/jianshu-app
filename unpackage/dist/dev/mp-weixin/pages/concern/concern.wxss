@@ -1,0 +1,25 @@
+
+.con-bar {
+	padding: 0 40rpx;
+	height: 120rpx;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.con-bar-title {
+	font-size: 36rpx;
+}
+
+/* 选项卡开始 */
+.head-nav {
+	color: #aaaabd;
+}
+.activite {
+	color: #333333;
+	border-bottom: 4rpx solid #f26f51;
+}
+.head-nav > view {
+	padding-bottom: 25rpx;
+}
+/* 选项卡结束 */

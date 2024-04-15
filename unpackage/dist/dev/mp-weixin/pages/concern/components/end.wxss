@@ -1,0 +1,6 @@
+
+.end-box {
+	padding: 40rpx 0;
+	height: 200rpx;
+	color: #aaaaaa;
+}

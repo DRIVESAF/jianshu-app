@@ -1,25 +1,5 @@
 
-.content {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	overflow-y: auto;
-}
-
-/* 状态栏开始 */
-.condition {
-	background-color: #ffffff;
-}
-/* 状态栏结束 */
-
 /* 搜索框开始 */
-.search {
-	background-color: #ffffff;
-}
- .uni-searchbar {
-	justify-content: center;
-}
  .uni-searchbar__box {
 	justify-content: center !important;
 	width: 80%;
@@ -29,14 +9,7 @@
 
 /* 选项卡开始 */
 .head-nav {
-	width: 100%;
-	padding: 40rpx auto;
-	height: 80rpx;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: flex-end;
 	color: #aaaabd;
-	background-color: #ffffff;
 }
 .activite {
 	color: #333333;
@@ -44,8 +17,5 @@
 }
 .head-nav > view {
 	padding-bottom: 25rpx;
-}
-.box {
-	background: #008000;
 }
 /* 选项卡结束 */

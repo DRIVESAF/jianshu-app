@@ -1,1 +1,1 @@
-<view class="mine">我的页</view>
+<view class="w-100"><scroll-view class="squ-scroll bg-white" scroll-x="ture"><view wx:for="{{a}}" wx:for-item="item" wx:key="c" class="scroll-box bg-white flex-shrink"><image class="scroll-img" src="{{item.a}}"></image><text class="scroll-text d-block text-center">{{item.b}}</text></view></scroll-view><shuoshuo u-i="40d07122-0" bind:__l="__l"></shuoshuo></view>

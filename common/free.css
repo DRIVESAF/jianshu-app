@@ -20,6 +20,9 @@
 	overflow-y: auto;
 }
 
+/* flex间隔 */
+
+
 .content2 {
 	position: fixed;
 	bottom: 100rpx;
@@ -41,8 +44,21 @@
 }
 
 /* 高度 */
+
 .h-8 {
 	height: 80rpx;
+}
+
+.h-10 {
+	height: 100rpx;
+}
+
+.h-12 {
+	height: 120rpx;
+}
+
+.h-18 {
+	height: 180rpx;
 }
 
 .h-20 {
@@ -766,6 +782,10 @@
 	font-size: 30rpx;
 }
 
+.font-33 {
+	font-size: 33rpx;
+}
+
 .font-md {
 	font-size: 35rpx;
 }
@@ -854,6 +874,9 @@
 	font-weight: 300;
 }
 
+
+
+
 /*细*/
 .font-weight-lighter {
 	font-weight: 100;
@@ -881,6 +904,10 @@
 
 /*斜体*/
 /* 文字颜色 */
+.text-jianshu {
+	color: #f26f51;
+}
+
 .text-white {
 	color: #ffffff;
 }
@@ -961,6 +988,10 @@
 	color: #6c757d;
 }
 
+.text-aaaaaa {
+	color: #aaaaaa;
+}
+
 /* 浅灰色 */
 .text-light-muted {
 	color: #A9A5A0;
@@ -974,7 +1005,28 @@
 	color: rgba(255, 255, 255, 0.5);
 }
 
+.text-ecefe5 {
+	color: #ecefe5;
+}
+
+.color-cccccd {
+	color: #cccccd;
+}
+
 /* 背景颜色 */
+.bg-fbe6e2 {
+	background-color: #fbe6e2;
+}
+
+.bg-85898c {
+	background-color: #85898c;
+}
+
+
+.bg-64696f {
+	background-color: #64696f;
+}
+
 
 .bg-silver {
 	background-color: #f2f2f2;
@@ -1053,6 +1105,13 @@
 }
 
 /* 边框 */
+.border-f26f51 {
+	border-width: 1rpx;
+	border-style: solid;
+	border-color: #f26f51;
+}
+
+
 .border {
 	border-width: 1rpx;
 	border-style: solid;
@@ -1076,6 +1135,13 @@
 	border-bottom-style: solid;
 	border-bottom-color: #dee2e6;
 }
+
+.xuanke-bottom {
+	border-bottom-width: 1rpx;
+	border-bottom-style: solid;
+	border-bottom-color: #f26f51;
+}
+
 
 .border-left {
 	border-left-width: 1rpx;
@@ -1146,6 +1212,14 @@
 /* 圆角 */
 .rounded {
 	border-radius: 8rpx;
+}
+
+.br-16 {
+	border-radius: 16rpx;
+}
+
+.br-32 {
+	border-radius: 32rpx;
 }
 
 .br-5 {
@@ -1277,4 +1351,108 @@
 
 .transform-y-30 {
 	transform: translateY(30%);
+}
+
+.align-center {
+	align-items: center;
+	/* 垂直居中 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.font-11 {
+	font-size: 22rpx;
+}
+
+
+
+.font-11-5 {
+	font-size: 23rpx;
+}
+
+
+
+
+.font-12 {
+	font-size: 24rpx;
+}
+
+.font-12-5 {
+	font-size: 25rpx;
+}
+
+.font-13 {
+	font-size: 26rpx;
+}
+
+.font-13-5 {
+	font-size: 27rpx;
+}
+
+.font-14 {
+	font-size: 28rpx;
+}
+
+.font-14-5 {
+	font-size: 29rpx;
+}
+
+.font-15 {
+	font-size: 30rpx;
+}
+
+.font-16 {
+	font-size: 32rpx;
+}
+
+.font-18 {
+	font-size: 36rpx;
+}
+
+.font-20 {
+	font-size: 40rpx;
+}
+
+.font-24 {
+	font-size: 48rpx;
+}
+
+
+.my-border-bottom {
+
+	border-bottom: 4rpx solid #f2f2f2;
+}
+
+.img-50 {
+	width: 50rpx;
+	height: 50rpx;
+}
+
+.img-100 {
+	width: 100rpx;
+	height: 100rpx;
+}
+
+.img-200 {
+	width: 200rpx;
+	height: 200rpx;
+}
+
+.img-400 {
+	width: 400rpx;
+	height: 400rpx;
+}
+
+.img-500 {
+	width: 500rpx;
+	height: 500rpx;
 }

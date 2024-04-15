@@ -2,6 +2,7 @@
 const common_vendor = require("../../../common/vendor.js");
 const square = () => "./island-components/square.js";
 const mine = () => "./island-components/mine.js";
+const end = () => "./end.js";
 const _sfc_main = {
   data() {
     return {
@@ -27,13 +28,15 @@ const _sfc_main = {
   },
   components: {
     square,
-    mine
+    mine,
+    end
   }
 };
 if (!Array) {
   const _component_square = common_vendor.resolveComponent("square");
+  const _component_end = common_vendor.resolveComponent("end");
   const _component_mine = common_vendor.resolveComponent("mine");
-  (_component_square + _component_mine)();
+  (_component_square + _component_end + _component_mine)();
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return common_vendor.e({

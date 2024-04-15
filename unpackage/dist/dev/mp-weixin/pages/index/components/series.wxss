@@ -1,0 +1,41 @@
+
+.tools {
+	height: 122rpx;
+	width: 100%;
+}
+.tools-icon {
+	width: 60rpx;
+	height: 70rpx;
+}
+.name {
+	font-size: 26rpx;
+}
+.concern {
+	height: 80rpx;
+}
+.concern-icon {
+	width: 54rpx;
+	height: 54rpx;
+}
+.title {
+	font-size: 30rpx;
+}
+.column {
+	padding: 30rpx;
+	flex-wrap: wrap;
+	gap: 40rpx;
+	background: #fff;
+}
+.column-son {
+	width: 200rpx;
+	height: 430rpx;
+	justify-content: space-between;
+}
+.column-cover {
+	height: 300rpx;
+}
+.column-tip {
+	height: 40rpx;
+	font-size: 24rpx;
+	color: #aaaaaa;
+}

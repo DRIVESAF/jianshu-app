@@ -1,0 +1,50 @@
+
+.update {
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+	padding: 0 40rpx;
+	justify-content: space-between;
+}
+ .uni-scroll-view-content {
+	display: flex !important;
+}
+.scroll-box {
+	padding-top: 40rpx;
+	width: 26%;
+	height: 300rpx;
+	padding-right: 15rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25rpx;
+}
+.scroll-img {
+	width: 75%;
+	height: 50%;
+	float: left;
+}
+
+/* 卡片开始 */
+.card-user {
+	display: flex;
+}
+.card-img {
+	height: 110rpx;
+	width: 100rpx;
+}
+.time {
+	color: #aaaaaa;
+}
+.data {
+	height: 100%;
+}
+ .uni-icons {
+	font-size: 33rpx !important;
+	float: right;
+	margin: 0 4rpx;
+}
+.topic-name {
+	color: #aaaaaa;
+}
+/* 卡片结束 */

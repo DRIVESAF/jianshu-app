@@ -1,48 +1,22 @@
 
-.shuoshuo {
-	background-color: #fff;
-	margin-top: 20rpx;
-	padding: 20rpx 40rpx;
-}
 .card-user {
-	margin: 20rpx 0;
 	display: flex;
 }
 .card-img {
 	height: 80rpx;
 	width: 80rpx;
-	border-radius: 50%;
-}
-.id {
-	padding-left: 20rpx;
-	display: inline-block;
-	flex-wrap: wrap;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.name {
-	font-size: 30rpx;
-	font-weight: bold;
 }
 .time {
-	font-size: 26rpx;
 	color: #aaaaaa;
 }
 .data {
 	height: 100%;
-	margin-top: 40rpx;
 }
  .uni-icons {
 	font-size: 33rpx !important;
 	float: right;
 	margin: 0 4rpx;
 }
-.topic {
-	padding: 20rpx 0;
-}
 .topic-name {
-	font-size: 30rpx;
 	color: #aaaaaa;
 }

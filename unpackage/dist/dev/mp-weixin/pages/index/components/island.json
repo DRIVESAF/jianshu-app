@@ -2,6 +2,7 @@
   "component": true,
   "usingComponents": {
     "square": "./island-components/square",
-    "mine": "./island-components/mine"
+    "mine": "./island-components/mine",
+    "end": "./end"
   }
 }

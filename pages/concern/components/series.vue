@@ -23,18 +23,14 @@
 			</view>
 		</view>
 		<!-- end开始 -->
-		<view class="item-end flex-column">
-			<image src="https://img2.imgtp.com/2024/04/07/hYBxqPmQ.png" mode=""></image>
-			<view class="end-text">
-				<text>去发现</text>
-				<text class="text-link-blue">更多有趣的作者和专题>></text>
-			</view>
-		</view>
+		<end2></end2>
+		<!-- end结束 -->
 	</view>
 </template>
 
 <script>
 import end from './end.vue';
+import end2 from './end2.vue';
 
 export default {
 	data() {
@@ -72,12 +68,17 @@ export default {
 		}
 	},
 	components: {
-		end
+		end,
+		end2
 	}
 };
 </script>
 
 <style>
+.topic {
+	height: 600px;
+	background-color: #ffffff;
+}
 .item {
 	height: 220rpx;
 	width: 100%;
@@ -126,13 +127,5 @@ export default {
 	width: 40rpx;
 	height: 40rpx;
 	border-radius: 50%;
-}
-
-.item-end {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 600rpx;
-	background-color: #ffffff;
 }
 </style>

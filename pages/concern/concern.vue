@@ -4,15 +4,15 @@
 		<view :style="{ height: statusBarHeight + 'px' }" class="condition bg-white"></view>
 		<!-- 状态栏结束 -->
 
-		<!-- 搜索开始 -->
-		<view class="con-bar">
+		<!-- 头部栏开始 -->
+		<view class="con-bar py-0 NaNrpx-4 h-12 bg-white d-f align-center justify-between">
 			<uni-icons type="personadd" size="23" color="#adadad"></uni-icons>
 
 			<text class="con-bar-title">关注</text>
 
 			<uni-icons type="search" size="23" color="#adadad"></uni-icons>
 		</view>
-		<!-- 搜索栏结束 -->
+		<!-- 头部栏结束 -->
 
 		<!-- 选项卡开始 -->
 		<!-- 内容切换 -->
@@ -115,15 +115,6 @@ export default {
 </script>
 
 <style>
-.con-bar {
-	padding: 0 40rpx;
-	height: 120rpx;
-	background-color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
 .con-bar-title {
 	font-size: 36rpx;
 }

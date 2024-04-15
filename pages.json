@@ -1,76 +1,117 @@
 {
 	// 组件自动导入规则
 	"easycom": {
-			"autoscan": true,
-			"custom": {
-				// uni-ui 规则如下配置
-				"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
-			}
-		},
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/concern/concern",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/diamond/diamond",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/msg/msg",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 互动消息
+		{
+			"path": "pages/msg/router/itrmsg",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 简书钻
+		{
+			"path": "pages/msg/router/jsdm",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 其他信息
+		{
+			"path": "pages/msg/router/othmsg",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 进化朗读者小岛
+		{
+			"path": "pages/concern/components/island-detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 简信聊天框
+		{
+			"path": "pages/msg/router/jsdm-components/onMsg",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 会员页面
+		{
+			"path": "pages/my/router/vip",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
 		}
-	    ,{
-		    "path" : "pages/concern/concern",
-		    "style" :                                                                                    
-		    {
-		        "navigationBarTitleText": "",
-		        "enablePullDownRefresh": false
-		    }
-		    
-		},{
-            "path" : "pages/diamond/diamond",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/msg/msg",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/my/my",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		 "navigationBarTitleText": "简书",
-        "navigationStyle":"custom",
+		"navigationBarTitleText": "简书",
+		"navigationStyle": "custom",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
-		
 	},
 	"tabBar": {
-			"color": "#d7d7d7",
-			"selectedColor": "#f26f51",
-			"borderStyle": "white",
-			"backgroundColor": "#ffffff",
-			"height": "50px",
-			"fontSize": "10px",
-			"iconWidth": "24px",
-			"spacing": "3px",
-	    	"iconfontSrc":"static/iconfont.ttf", // app tabbar 字体.ttf文件路径 app 3.4.4+
-			"list": [{
+		"color": "#d7d7d7",
+		"selectedColor": "#f26f51",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"height": "50px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		"iconfontSrc": "static/iconfont.ttf", // app tabbar 字体.ttf文件路径 app 3.4.4+
+		"list": [{
 				"pagePath": "pages/index/index",
 				"iconPath": "static/tabbar/首页.png",
 				"selectedIconPath": "static/tabbar/首页-light.png",
 				"text": "首页"
-			}, {
+			},
+			{
 				"pagePath": "pages/concern/concern",
 				"iconPath": "static/tabbar/关注.png",
 				"selectedIconPath": "static/tabbar/关注-light.png",
@@ -93,5 +134,7 @@
 				"iconPath": "static/tabbar/我的.png",
 				"selectedIconPath": "static/tabbar/我的-light.png",
 				"text": "我的"
-			}]
-}}
+			}
+		]
+	}
+}

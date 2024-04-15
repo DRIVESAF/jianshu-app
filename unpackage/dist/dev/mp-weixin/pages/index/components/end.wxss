@@ -1,0 +1,5 @@
+
+.end-box {
+	height: 60rpx;
+	color: #aaaaaa;
+}
